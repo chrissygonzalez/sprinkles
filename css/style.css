@@ -21,7 +21,7 @@ hr {
   border: 0;
   height: 2px;
   background: #f0f0f0;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 /*
@@ -201,6 +201,7 @@ GENERAL CLASSES
 .readingCol {
   width: 66.6%;
   margin-left: 16.66%;
+  padding: 0;
 }
 
 .centered {
@@ -233,15 +234,17 @@ header {
 
 .bio {
   border-radius: 50%;
-  margin-top: 40px;
 }
 
-.leftmargin {
-  margin-left: 20px;
+.topbio {
+  border-radius: 50%;
+  display: none;
 }
 
 .intro {
   margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 0;
   display: inline-block;
   width: 75%;
 }
@@ -253,7 +256,9 @@ PROJECTS
 */
 
 .projecth1 {
-  margin-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  line-height: 1.35em;
 }
 
 .hero {
@@ -345,7 +350,12 @@ footer {
 }
 
 .footerh3 {
-  margin: 9px 0 0 0;
+  margin: 0;
+  width: 25%;
+}
+
+.contact {
+  width: 70%;
 }
 
 /*
@@ -353,111 +363,98 @@ footer {
 MEDIA QUERIES
 *****************
 */
-@media only screen and (max-width: 960px) {
-
-  #projects {
-    width: 83.33%;
-  }
-
-  .project-text {
-    width: 100%;
-    margin-left: 0;
-    -webkit-order: 0;
-    order: 0;
-  }
-
-  .project-entry {
-    padding-left: 0;
-  }
-
-  .forSlick {
-    -webkit-order: 2;
-    order: 2;
-    width: 100%;
-  }
-
-  .carousel {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-}
-
-@media only screen and (max-width: 924px) {
-
+@media only screen and (max-width: 1050px) {
   .welcome {
     display: none;
   }
-  #topContacts {
-    margin-left: 6%;
-    margin-top: 0;
+}
+
+@media only screen and (max-width: 850px) {
+
+  header {
+    padding-top: 60px;
+  }
+
+  #name {
+    text-align: center;
+    font-size: 1.65em;
+    margin-top: 20px;
+  }
+
+  #mapsection {
+    margin-left: 8.33%;
+    width: 83.33%;
+  }
+
+  .readingCol {
+    margin-left: 8.33%;
+    width: 83.33%;
+  }
+
+  .summary {
+    flex-direction: column;
+  }
+
+  .bio {
+    display: none;
+  }
+
+  .topbio {
+    display: inline-block;
+  }
+
+  .intro {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #mapDiv {
+    height: 375px;
   }
 
 }
 
 @media only screen and (max-width: 850px) {
 
-  #workExperience,
-  #mapsection {
-    width: 83.33%;
-  }
-
-}
-
-@media only screen and (max-width: 760px) {
-
-  h1 {
-    font-size: 30px;
-    line-height: 45px;
-  }
-
-  #topContacts {
-    margin-top: 15px;
-  }
-
-  .biopic {
-    display: block;
-    width: 100%;
-  }
-
-}
-
-@media only screen and (max-width: 590px) {
-
-  #skillsSection {
-    margin-left: 8%;
-  }
-
-  .pink {
-    margin-right: 10px;
-  }
-
-  #skillsSection {
-    flex-direction: column;
-  }
-
-  .skill {
-    margin-left: 0;
-  }
-
-  .darker {
+  .footerh3 {
     width: 100%;
     text-align: center;
-    margin: 0;
+    margin-bottom: 10px ;
   }
 
-  #footerContacts {
-    margin-left: auto;
-    margin-right: auto;
-    height: 50px;
+  .contact {
+    width: 100%;
   }
 
-  .icon {
-    height: 50px;
+  .projectHeader {
+    background-size: 50%;
+    background-position: 120%;
   }
 
-  footer {
+  li {
     padding-bottom: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .box {
+    text-align: center;
+    display: block;
+  }
+
+  #mapDiv {
+    height: 200px;
+  }
+
+  .projectHeader {
+    background-image: none;
+    padding-top: 23px;
+  }
+
+  .smallbio {
+    display: none;
   }
 
 }

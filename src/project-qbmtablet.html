@@ -1,0 +1,155 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chrissy Gonzalez, UX Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  <!-- Styles for Google fonts  and FontAwesome -->
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+</head>
+<body>
+  <header class="projectHeader">
+        <a class="noUnderline" href="index.html">
+          <h3 class="fonta"></h3>
+          <img class="smallbio" src="images/me_2x.jpg">
+          <h3 class="shorth3">Chrissy Gonzalez</h3>
+        </a>
+  </header>
+
+  <div class="grid">
+    <div class="row">
+      <section class="readingCol">
+      <h1 class="projecth1">QuickBooks Mobile for Android Tablet</h1>
+      <p>QuickBooks Mobile for Android was originally a phone app, but the stats showed an increasing number of users using it on their tablets. Android will automatically scale up UI for larger screens, but as it’s still a poor experience, we were able to make a business case for building a tablet version. Starting from scratch wasn’t an option, so the first challenge was figuring out if we could refactor what we already had.</p>
+
+      <figure>
+        <img class="hero" src="images/tablet_framed_hero_2x.jpg">
+        <figcaption>The tablet-optimized QB Mobile</figcaption>
+      </figure>
+
+      <h3 class="box">Experiments</h3>
+
+      <p>For the first few months, the tablet development team consisted of a single engineer, who refactored a small part of the app, and me, a visual designer (at the time). Together, we produced a proof of concept that earned us the green light — it didn’t look great, but it proved that our code could modularized and would adapt to larger screens.</p>
+
+      <figure>
+        <img class="hero" src="images/tablet_experiment_2x.jpg">
+        <figcaption>Category nav, customer list, and customer detail — three screens in the phone app — display here in a single tablet view</figcaption>
+      </figure>
+
+      <h3 class="box">Early Wireframes</h3>
+
+      <p>With approval from engineering, we were suddenly given a full development team before we were really ready to build at full velocity. The product strategy was still in flux, so I used these initial wireframes to fuel early planning meetings.</p>
+
+      <figure class="flex-box spacebetween">
+      <a class="fancybox fancybox.image col-4" rel="group1" title="Customer list and sorting, with related phone screen for comparison" href="images/tablet_wires1_2x.png">
+        <img src="images/thumb_tablet_wires1_2x.png" alt="" />
+      </a>
+      <a class="fancybox fancybox.image col-4" rel="group1" title="Customer details and transaction list, with related phone screen" href="images/tablet_wires2_2x.png">
+        <img src="images/thumb_tablet_wires2_2x.png" alt="" />
+      </a>
+            <a class="fancybox fancybox.image col-4" rel="group1" title="Transaction list and detail, with phone transaction list" href="images/tablet_wires3_2x.png">
+        <img src="images/thumb_tablet_wires3_2x.png" alt="" />
+      </a>
+
+    </figure>
+    <p class="caption">The customer list and detail screens</p>
+
+      <h3 class="box">Brainstorm</h3>
+
+      <p>I got a lot of conflicting feedback from different members of the group, so after going through a few cycles of revisions, I pulled everyone into a room and had them voice their concerns in person. This was a great way to get some questions answered, but as an unexpected benefit, it also helped to unite the team.</p>
+
+      <figure>
+        <img class="hero" src="images/tablet_brainstorm_2x.jpg">
+        <figcaption>Working through the especially tricky question of how to display subcustomers</figcaption>
+      </figure>
+
+      <h3 class="box">Visual Design</h3>
+
+      <p>After a few months, we found an agency to help with interaction design, so I was able to focus on the visuals. For the first release to alpha testers, I designed representative screens for all the major sections and documented the styles in a very rough style guide. At the same time, I started working on what we would need to add in future releases.</p>
+            <figure class="flex-box spacebetween">
+        <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="The customer list" href="images/tablet_vis_01_2x.png">
+          <img src="images/thumb_tablet_vis_01_2x.png" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Customer detail with transaction list" href="images/tablet_vis_02_2x.png">
+          <img src="images/thumb_tablet_vis_02_2x.png" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Invoice list" href="images/tablet_vis_03_2x.png">
+          <img src="images/thumb_tablet_vis_03_2x.png" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Creating an invoice" href="images/tablet_vis_04_2x.png">
+          <img src="images/thumb_tablet_vis_04_2x.png" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Adding a new item" href="images/tablet_vis_05_2x.png">
+          <img src="images/thumb_tablet_vis_05_2x.png" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Selecting an existing item by category" href="images/tablet_vis_06_2x.png">
+          <img src="images/thumb_tablet_vis_06_2x.png" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Selecting a specific existing item" href="images/tablet_vis_07_2x.png">
+          <img src="images/thumb_tablet_vis_07_2x.png" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Invoice view" href="images/tablet_vis_08_2x.png">
+          <img src="images/thumb_tablet_vis_08_2x.png" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Editing an invoice" href="images/tablet_vis_09_2x.png">
+        <img src="images/thumb_tablet_vis_09_2x.png" alt="" />
+        </a>
+      </figure>
+
+      <p class="caption">Visual design for the alpha release</p>
+
+      <h3 class="box">Additional Features And Views</h3>
+
+      <p>In the next versions, we expanded on the alpha feature set and tested new ideas for search and adding information on the fly. We added a grid view for transactions and also tried some things that didn’t work and were scrapped. When the Kindle Fire and the Nexus 7 came out, I also had to adjust my design process to accommodate the smaller screens in portrait orientation.</p>
+
+      <p>About a month before the app was scheduled to be released in the Google Play store, our team was reorganized, and we found ourselves slated to join different product teams. It was poor timing, but we spent our last few weeks together polishing the user experience and squashing bugs, and we were able to release a v1 that made us proud.</p>
+
+                  <figure class="flex-box spacebetween">
+        <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="Enhanced customer list" href="images/tablet_refine_01_2x.png">
+          <img src="images/thumb_tablet_refine_01_2x.png" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="Grid view for transaction list" href="images/tablet_refine_02_2x.png">
+          <img src="images/thumb_tablet_refine_02_2x.png" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="Ability to receive payment on an invoice" href="images/tablet_refine_03_2x.png">
+          <img src="images/thumb_tablet_refine_03_2x.png" alt="" />
+        </a>
+      </figure>
+
+     <p class="caption">Additions after the initial alpha version</p>
+
+    </section>
+    </div>
+  </div>
+  <p class="projectNav">
+    <a class="icon" href="project-legaldocs.html"></a>
+    <a class="icon" href="project-qbmftu.html"></a>
+  </p>
+<script type="text/javascript">
+  $(document).ready(function() {
+      $(".fancybox").fancybox();
+
+      $(".fancybox")
+    //.attr('rel', 'gallery')
+    .fancybox({
+        padding : 0,
+        helpers : {
+          title: {
+            type: 'outside'
+          }
+        }
+    })
+});
+
+</script>
+</body>
+</html>

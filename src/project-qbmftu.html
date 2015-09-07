@@ -1,0 +1,139 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chrissy Gonzalez, UX Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  <!-- Styles for Google fonts  and FontAwesome -->
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+</head>
+<body>
+  <header class="projectHeader">
+        <a class="noUnderline" href="index.html">
+          <h3 class="fonta"></h3>
+          <img class="smallbio" src="images/me_2x.jpg">
+          <h3 class="shorth3">Chrissy Gonzalez</h3>
+        </a>
+  </header>
+
+  <div class="grid">
+    <div class="row">
+      <section class="readingCol">
+      <h1 class="projecth1">QuickBooks Mobile First-time Use Experience</h1>
+      <p>A few months after I started working on QuickBooks Mobile for Android, I got the chance to redesign the signed-out experience. There hadn’t been a designer on the project for most of the time it was in development, so no one had ever really considered what it was like for new users to download the app, try to sign in, and poke around to see what it did. We’d been so focused on what went on after sign-in, we didn't realize how many customers were getting confused and giving up.</p>
+
+      <figure class="flex-box spacebetween">
+        <a class="fancybox fancybox.image col-4" rel="group1" title="The opening screen, sign in, and loading" href="images/ftu_intro_01.gif">
+          <img src="images/thumb_ftu_intro_01_2x.gif" alt="" />
+        </a>
+        <a class="fancybox fancybox.image col-4" rel="group1" title="Feature tips, in order of how much they were used" href="images/ftu_intro_02.gif">
+          <img src="images/thumb_ftu_intro_02_2x.gif" alt="" />
+        </a>
+        <a class="fancybox fancybox.image col-4" rel="group1" title="Successful sign in requires knowing which version of QuickBooks you have" href="images/ftu_intro_03.gif">
+          <img src="images/thumb_ftu_intro_03_2x.gif" alt="" />
+        </a>
+    </figure>
+    <p class="caption">The redesigned first-time use experience</p>
+
+      <h3 class="box">Is it stuck?</h3>
+
+      <p>The redesign was inspired by a proposal from one of our engineers to improve the loading screen. The existing loading screen showed a static message and a spinner, and the spinner spun until a user’s entire data file downloaded. It also spun when something went wrong and the process got stuck, but there was no way to tell the difference. When I started to consider the loading screen, I realized the sign in screen also needed work.</p>
+
+      <figure class="flex-box spacebetween">
+        <img class="col-6 projectImg" src="images/ftu_before_signin_2x.png" alt="" />
+        <img class="col-6 projectImg" src="images/ftu_before_loading_2x.png" alt="" />
+    </figure>
+      <p class="caption">Before: users were having trouble signing in, and the loading screen didn’t show any progress</p>
+
+      <h3 class="box">We had metrics</h3>
+
+      <p>I wanted to propose expanding the loading screen project to include sign in, so I grabbed our product manager after a meeting and drew it out. He thought it was a good idea and backed it up with interesting data: only 56-68% of people who downloaded our app had credentials that entitled them to use it. Everyone else was either confused or just trying to learn more.</p>
+
+      <figure>
+        <img class="hero" src="images/ftu_whiteboard_2x.jpg">
+        <figcaption>Whiteboards for the win</figcaption>
+      </figure>
+
+      <h3 class="box">Wireframes</h3>
+
+      <p>Once we had a general idea of our goals for the project, I started sketching to get the conversation going. At first, I thought the QuickBooks wizard was too complicated and left it out, but we added it back later based on feedback from other product teams.</p>
+
+      <p>Probably our biggest victory was getting a single phone number for customers to call for help (previously, it was one per flavor of QuickBooks). Having to call for help was still less than ideal, but it was the best option we had available.</p>
+
+      <figure>
+        <a class="fancybox fancybox.image" rel="group2" title="Distilling the QuickBooks product lineup down to a few questions took a few iterations" href="images/ftu_wires_03_2x.png">
+          <img src="images/ftu_wires_03_2x.png" alt="" />
+        </a>
+    </figure>
+    <p class="caption">Wireframes for sign in, tips, and the wizard</p>
+
+      <h3 class="box">Visual Design</h3>
+
+      <p>I thought the signed-out part of the app should behave something like packaging, a little shiny and fairly simple. There was no defined QuickBooks brand at the time, so I referenced the Intuit brand for colors and type and then added texture and a little depth.</p>
+      <figure class="flex-box spacebetween">
+        <a class="projectImg fancybox fancybox.image col-2" rel="group3" title="Opening screen" href="images/ftu_vis_01_2x.jpg">
+          <img src="images/ftu_vis_01_2x.jpg" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-2" rel="group3" title="Sign in screen" href="images/ftu_vis_02_2x.jpg">
+          <img src="images/ftu_vis_02_2x.jpg" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-2" rel="group3" title="Loading screen" href="images/ftu_vis_03_2x.jpg">
+          <img src="images/ftu_vis_03_2x.jpg" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-2" rel="group3" title="Basic tips layout" href="images/ftu_vis_04_2x.jpg">
+          <img src="images/ftu_vis_04_2x.jpg" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-2" rel="group3" title="QuickBooks identification wizard" href="images/ftu_vis_05_2x.jpg">
+          <img src="images/ftu_vis_05_2x.jpg" alt="" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-2" rel="group3" title="Sign in within wizard" href="images/ftu_vis_06_2x.jpg">
+          <img src="images/ftu_vis_06_2x.jpg" alt="" />
+        </a>
+    </figure>
+    <p class="caption">Final visual design</p>
+
+      <h3 class="box">The Launch</h3>
+
+      <p>Despite being the first big UI story I designed for QuickBooks Mobile, this was one of the most successful. We had clear metrics going into it, so we were able to see the impact it had after a few months. Log in errors went down by 21%, which meant users were entering the right credentials more often or trying the wrong credentials less often. We also increased engagement with the app before sign in by 25%. And by adding a way to sign up for a QuickBooks Online trial directly in the app, we actually increased trial sign ups from any source by 50%.</p>
+
+      <figure>
+        <img class="hero" src="images/ftu_release_2x.jpg">
+        <figcaption>The average rating for QB Mobile increased by more than a whole star in the time I was involved with it.</figcaption>
+      </figure>
+
+    </section>
+    </div>
+  </div>
+  <p class="projectNav">
+    <a class="icon" href="project-qbmtablet.html"></a>
+    <a class="icon" href="project-legaldocs.html"></a>
+  </p>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $(".fancybox").fancybox();
+
+      $(".fancybox")
+    //.attr('rel', 'gallery')
+    .fancybox({
+        padding : 0,
+        helpers : {
+          title: {
+            type: 'outside'
+          }
+        }
+    })
+});
+
+</script>
+</body>
+</html>

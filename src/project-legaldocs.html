@@ -1,0 +1,127 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chrissy Gonzalez, UX Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  <!-- Styles for Google fonts  and FontAwesome -->
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+</head>
+<body>
+  <header class="projectHeader">
+        <a class="noUnderline" href="index.html">
+          <h3 class="fonta"></h3>
+          <img class="smallbio" src="images/me_2x.jpg">
+          <h3 class="shorth3">Chrissy Gonzalez</h3>
+        </a>
+  </header>
+
+  <div class="grid">
+    <div class="row">
+      <section class="readingCol">
+      <h1 class="projecth1">Legal Documents for Startups </h1>
+      <p>Early-stage companies often keep haphazard legal records, an expensive mistake many founders don’t discover until they get funded and have to pay a lawyer to straighten things out. In my current role, I’m helping to design a tool for entrepreneurs to get organized, legally, from the earliest moment possible.</p>
+
+      <figure>
+       <a class="fancybox fancybox.image" rel="group1" title="An early look at the workflow process" href="images/legal_flow_2x.png">
+        <img src="images/legal_flow_2x.png" alt="" />
+      </a>
+        <figcaption>Basic document workflow</figcaption>
+      </figure>
+
+      <h3 class="box">Sketches</h3>
+
+      <p>When I joined the project, a basic concept had been outlined, but most of the details were still to be determined. Through brainstorms and discussions, the idea of a ‘workflow’ emerged as the core of the product — the entrepreneur chooses to undertake a workflow, enters a minimal amount of information, and through the magic of technology, appropriate legal documents are produced. But what are the exact tasks available, what information is required, what documents are produced, and how should it all be organized? Many sketches ensued.</p>
+
+      <figure class="flex-box spacebetween">
+      <a class="projectImg fancybox fancybox.image col-6" rel="group2" title="The basic workflow starts by asking who, what, and a minimal amount of other data" href="images/legal_sketch_01_2x.jpg">
+        <img src="images/thumb_legal_sketch_01_2x.jpg" alt="" />
+      </a>
+      <a class="projectImg fancybox fancybox.image col-6" rel="group2" title="The system generates a set of legal documents and the entrepreneur can sign and invite others to sign" href="images/legal_sketch_02_2x.jpg">
+        <img src="images/thumb_legal_sketch_02_2x.jpg" alt="" />
+      </a>
+    </figure>
+    <p class="caption">Workflow sketches</p>
+
+      <h3 class="box">Thumbnail Wireframes</h3>
+
+      <p>When I moved from sketches to wireframes, it immediately became obvious how differently we defined our shared terminology. This period became about examining our own assumptions and redefining a model for how the product worked. Because we were still thinking at a high level, I tried to keep the wireframes at a lower fidelity.</p>
+
+      <figure class="flex-box spacebetween">
+      <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="We started with the simplest legal task facing a startup, documenting a contribution." href="images/legal_thumbwires_01_2x.png">
+        <img src="images/thumb_legal_thumbwires_01_2x.png" alt="" />
+      </a>
+      <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="One idea for the workflow wizard" href="images/legal_thumbwires_02_2x.png">
+        <img src="images/legal_thumbwires_02_2x.png" alt="" />
+      </a>
+        <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="Another idea for the workflow wizard" href="images/legal_thumbwires_03_2x.png">
+        <img src="images/legal_thumbwires_03_2x.png" alt="" />
+      </a>
+    </figure>
+    <p class="caption">First steps in designing the workflow wizard</p>
+
+      <h3 class="box">Higher-Fidelity Wireframes</h3>
+
+      <p>After making some progress, I started designing at actual size with existing styles from the Gust core product. During this period I looked more closely at the lists of documents, and we added a second workflow for documenting a relationship, both of which revealed a few gaps in our thinking.</p>
+
+      <figure class="flex-box spacebetween">
+      <a class="projectImg fancybox fancybox.image col-6" rel="group4" title="Workflow wizard part 1" href="images/legal_hires_01_2x.png">
+        <img class="border" src="images/thumb_legal_hires_01_2x.png" alt="" />
+      </a>
+      <a class="projectImg fancybox fancybox.image col-6" rel="group4" title="Workflow wizard part 2" href="images/legal_hires_02_2x.png">
+        <img class="border" src="images/thumb_legal_hires_02_2x.png" alt="" />
+      </a>
+    </figure>
+    <p class="caption">More refined wireframes</p>
+
+      <h3 class="box">Revised Wizard</h3>
+
+      <p>The small, in-page document wizard helped us make decisions and approach document creation in a modular way, but it started to break down when we tried to accommodate more complicated document types. I explored different ideas for a full-page wizard, and we chose this one as the most extensible. (The core product styles were being updated around this time, so this version also incorporates the latest look and feel.)</p>
+
+      <p>With each iteration, the workflow wizard becomes more robust and able to represent more complex information, but there’s still a lot to do. Ideally, the next steps in our design process will include testing this version with entrepreneurs and iterating to add capabilities and address useful feedback.</p>
+
+      <figure class="flex-box spacebetween">
+      <a class="projectImg fancybox fancybox.image col-6" rel="group5" title="The 'who' step" href="images/legal_revised_01_2x.png">
+        <img class="border" src="images/thumb_legal_revised_01_2x.png" alt="" />
+      </a>
+      <a class="projectImg fancybox fancybox.image col-6" rel="group5" title="The document review and signing step" href="images/legal_revised_02_2x.png">
+        <img class="border" src="images/thumb_legal_revised_02_2x.png" alt="" />
+      </a>
+    </figure>
+    <p class="caption">Full-page wizard</p>
+
+    </section>
+    </div>
+  </div>
+  <p class="projectNav">
+    <a class="icon" href="project-qbmftu.html"></a>
+    <a class="icon" href="project-qbmtablet.html"></a>
+  </p>
+<script type="text/javascript">
+  $(document).ready(function() {
+      $(".fancybox").fancybox();
+
+      $(".fancybox")
+    //.attr('rel', 'gallery')
+    .fancybox({
+        padding : 0,
+        helpers : {
+          title: {
+            type: 'outside'
+          }
+        }
+    })
+});
+
+</script>
+</body>
+</html>

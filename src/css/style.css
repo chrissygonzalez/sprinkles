@@ -264,6 +264,8 @@ header {
 .topbio {
   border-radius: 50%;
   display: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro {

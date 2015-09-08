@@ -1,0 +1,28 @@
+ErrorDocument 404 /404.shtml
+ErrorDocument 500 /500.shtml
+
+#RewriteEngine on
+#RewriteCond %{HTTP_REFERER} !^http://katie.britenow.com/.*$      [NC]
+#RewriteCond %{HTTP_REFERER} !^http://katie.britenow.com$      [NC]
+#RewriteCond %{HTTP_REFERER} !^http://britenow.com/.*$      [NC]
+#RewriteCond %{HTTP_REFERER} !^http://britenow.com$      [NC]
+#RewriteCond %{HTTP_REFERER} !^http://portfolio.britenow.com/.*$      [NC]
+#RewriteCond %{HTTP_REFERER} !^http://portfolio.britenow.com$      [NC]
+#RewriteCond %{HTTP_REFERER} !^http://www.britenow.com/.*$      [NC]
+#RewriteCond %{HTTP_REFERER} !^http://www.britenow.com$      [NC]
+#RewriteCond %{HTTP_HOST} ^.*$
+#RewriteRule ^/?$ http://portfolio.britenow.com [R=302,L]
+
+# BEGIN ExpressionEngine
+RewriteEngine on
+RewriteCond $1 ^(weblog|member|search|portfolio|project|casestudy|resume|email|hello|new|P[0-9]{2,8}) [NC]
+RewriteRule ^(.*)$ /index.php/$1 [L]
+# END ExpressionEngine
+#RewriteCond %{HTTP_HOST} ^chrissygonzalez\.com$ [OR]
+#RewriteCond %{HTTP_HOST} ^www\.chrissygonzalez\.com$
+#RewriteRule ^/?$ "http\:\/\/britenow\.com" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^britenow\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.britenow\.com$
+RewriteRule ^/?$ "http\:\/\/chrissygonzalez\.com\/" [R=301,L]
+

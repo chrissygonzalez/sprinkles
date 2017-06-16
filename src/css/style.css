@@ -201,6 +201,14 @@ figcaption {
   text-decoration: none;
 }
 
+.merriweather {
+  font-family: 'Merriweather';
+}
+
+a.merriweather {
+  color: #5E9C8E;
+}
+
 /*
 *****************
 GENERAL CLASSES

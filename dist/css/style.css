@@ -145,6 +145,10 @@ a:hover {
   color: #286dbe;
 }
 
+.border {
+    border: 2px solid #ccc;
+}
+
 p {
   font-family: 'Merriweather';
   font-size: 1em;
@@ -210,6 +214,14 @@ figcaption {
 
 a.merriweather {
   color: #5E9C8E;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.text-smaller {
+    font-size: .8em;
 }
 
 /*

@@ -31,11 +31,11 @@ module.exports = function(grunt) {
   }
   });
 
-//grunt.loadNpmTasks('grunt-responsive-images');
+grunt.loadNpmTasks('grunt-responsive-images');
 grunt.loadNpmTasks('grunt-autoprefixer');
 //grunt.loadNpmTasks('grunt-inline');
 //grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
-grunt.registerTask('default', ['autoprefixer']);
+grunt.registerTask('default', ['autoprefixer', 'responsive_images']);
 
 };

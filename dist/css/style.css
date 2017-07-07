@@ -224,6 +224,12 @@ a.merriweather {
     font-size: .8em;
 }
 
+.text-larger {
+    font-size: 1.25em;
+    padding: 0 0 0 5px;
+    vertical-align: bottom;
+}
+
 /*
 *****************
 GENERAL CLASSES
@@ -318,6 +324,16 @@ header {
 PROJECTS
 *****************
 */
+
+.projecthome {
+    display: block;
+    margin-top: 120px;
+}
+
+.subprojecth1 {
+  margin-bottom: 30px;
+  line-height: 1.35em;
+}
 
 .projecth1 {
   margin-top: 120px;

@@ -43,6 +43,10 @@ GRID
   flex-wrap: wrap;
 }
 
+.row-center {
+  justify-content: center;
+}
+
 .col-1 {
   width: 8.33%;
 }
@@ -203,6 +207,33 @@ figcaption {
   color: #1a1a1a;
   border: 2px solid #1a1a1a;
   text-decoration: none;
+}
+
+.homeTab {
+  border: 2px solid #78A79D;
+  font-weight: bold;
+  background-color: #fff;
+  color: #5E9C8E;
+  padding: 15px;
+  border-radius: 25px;
+  margin: 20px;
+}
+
+.homeTab-selected {
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  text-decoration: none;
+}
+
+.homeTab:hover {
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  text-decoration: none;
+}
+
+.homeTab-bar {
+  background-color: #efefef;
+  margin-top: 40px;
 }
 
 .merriweather {
@@ -404,28 +435,6 @@ PROJECTS
 .projectImg {
   padding: 5px;
   box-sizing: border-box;
-}
-
-/*
-*****************
-MAP
-*****************
-*/
-
-#mapsection {
-  margin-left: 16.66%;
-  width: 66.67%;
-}
-
-#map {
-  display: block;
-  height: 100%;
-  border: 1px solid #f0f0f0;
-}
-
-#mapDiv {
-  height: 400px;
-  padding-bottom: 80px;
 }
 
 /*

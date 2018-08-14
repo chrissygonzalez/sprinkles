@@ -209,8 +209,37 @@ figcaption {
   text-decoration: none;
 }
 
+.merriweather {
+  font-family: 'Merriweather';
+}
+
+a.merriweather {
+  color: #5E9C8E;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.text-smaller {
+    font-size: .8em;
+}
+
+.text-larger {
+    font-size: 1.25em;
+    padding: 0 0 0 5px;
+    vertical-align: bottom;
+}
+
+/*
+*****************
+HOMEPAGE BUTTONS
+*****************
+*/
+
 .homeTab {
   border: 2px solid #78A79D;
+  font-size: 16px;
   font-weight: bold;
   background-color: #fff;
   color: #5E9C8E;
@@ -236,26 +265,24 @@ figcaption {
   margin-top: 40px;
 }
 
-.merriweather {
-  font-family: 'Merriweather';
+.homeTab-disabled {
+  opacity: .3;
+  animation: 1s fade-out 1;
+  pointer-events: none; 
 }
 
-a.merriweather {
-  color: #5E9C8E;
+.selected {
+  background-color: #ccc;
 }
 
-.normal {
-    font-weight: normal;
+.hide {
+  display: none;
+  animation: 1s fade-out 1;  
 }
 
-.text-smaller {
-    font-size: .8em;
-}
-
-.text-larger {
-    font-size: 1.25em;
-    padding: 0 0 0 5px;
-    vertical-align: bottom;
+@keyframes fade-out {
+  0%   { opacity: 1; }
+  100% { opacity: .3; }
 }
 
 /*

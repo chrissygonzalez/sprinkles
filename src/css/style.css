@@ -146,6 +146,11 @@ a:hover {
   color: #286dbe;
 }
 
+.a-text {
+  font-family: 'Merriweather', serif;
+  text-decoration: underline;
+}
+
 .border {
     border: 2px solid #ccc;
 }
@@ -246,12 +251,7 @@ HOMEPAGE BUTTONS
   padding: 15px;
   border-radius: 25px;
   margin: 20px;
-}
-
-.homeTab-selected {
-  color: #1a1a1a;
-  border: 2px solid #1a1a1a;
-  text-decoration: none;
+  opacity: .75;
 }
 
 .homeTab:hover {
@@ -266,13 +266,11 @@ HOMEPAGE BUTTONS
 }
 
 .homeTab-disabled {
-  opacity: .3;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  opacity: 1;
   animation: 1s fade-out 1;
   pointer-events: none; 
-}
-
-.selected {
-  background-color: #ccc;
 }
 
 .hide {
@@ -281,8 +279,8 @@ HOMEPAGE BUTTONS
 }
 
 @keyframes fade-out {
-  0%   { opacity: 1; }
-  100% { opacity: .3; }
+  0%   { opacity: .75; }
+  100% { opacity: 1; }
 }
 
 /*

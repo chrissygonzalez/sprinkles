@@ -13,6 +13,7 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="js/picturefill.min.js" async></script>
+  <script src="js/tabs.js" async></script>
 </head>
 <body>
 	<header>
@@ -34,64 +35,107 @@
       </div>
     </div>
 
-    <hr>
-
-    <div class="grid">
-      <div class="row">
-        <section class="readingCol">
-        	<a class="homeLink" href="etsy-work/project-etsytools.html">Internal Tools at Etsy <span class="text-smaller normal">(requires password)</span> <span class="text-larger">&rarr;</span></a>
-        	<a href="etsy-work/project-etsytools.html">
-            <figure>
-              <img src="images/etsy_stash-provocations_1x.png" srcset="images/etsy_stash-provocations_1x.png 1x, images/etsy_stash-provocations_2x.png 2x" alt="Design provocations for adding vetting to Stash tool" />
-            </figure>
-          </a>
-        </section>
+    <div class="homeTab-bar">
+      <div class="grid">
+        <div class="row row-center">
+          <button class="homeTab homeTab-disabled" id="btn-design" href="" disabled>Design projects</button>
+          <button class="homeTab" id="btn-code" href="">Code projects</button>
+        </div>
       </div>
     </div>
 
-    <hr>
-    <div class="grid">
-      <div class="row">
-        <section class="readingCol">
-        	<a class="homeLink" href="project-legaldocs.html">Legal Documents for Startups  <span class="text-larger">&rarr;</span></a>
-        	<a href="project-legaldocs.html">
-            <figure>
-              <img src="images/legal_sketch_01_1x.jpg" srcset="images/legal_sketch_01_1x.jpg 1x, images/legal_sketch_01_2x.jpg 2x" alt="Workflow sketches" />
-            </figure>
-          </a>
-        </section>
+    <div id="content-design">
+      <div class="grid">
+        <div class="row">
+          <section class="readingCol">
+          	<a class="homeLink" href="etsy-work/project-etsytools.html">Internal Tools at Etsy <span class="text-smaller normal">(requires password)</span> <span class="text-larger">&rarr;</span></a>
+          	<a href="etsy-work/project-etsytools.html">
+              <figure>
+                <img src="images/etsy_stash-provocations_1x.png" srcset="images/etsy_stash-provocations_1x.png 1x, images/etsy_stash-provocations_2x.png 2x" alt="Design provocations for adding vetting to Stash tool" />
+              </figure>
+            </a>
+          </section>
+        </div>
+      </div>
+
+      <hr>
+      <div class="grid">
+        <div class="row">
+          <section class="readingCol">
+          	<a class="homeLink" href="project-legaldocs.html">Legal Documents for Startups  <span class="text-larger">&rarr;</span></a>
+          	<a href="project-legaldocs.html">
+              <figure>
+                <img src="images/legal_sketch_01_1x.jpg" srcset="images/legal_sketch_01_1x.jpg 1x, images/legal_sketch_01_2x.jpg 2x" alt="Workflow sketches" />
+              </figure>
+            </a>
+          </section>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="grid">
+        <div class="row">
+          <section class="readingCol">
+          	<a class="homeLink" href="project-qbmtablet.html">QuickBooks Mobile for Android Tablet  <span class="text-larger">&rarr;</span></a>
+        	      <a href="project-qbmtablet.html">
+                  <figure>
+                    <img class="hero" src="images/tablet_framed_hero_1x.jpg" srcset="images/tablet_framed_hero_1x.jpg 1x, images/tablet_framed_hero_2x.jpg 2x" alt="QBM for Android Tablet" />
+                  </figure>
+                </a>
+          </section>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="grid">
+        <div class="row">
+          <section class="readingCol">
+          	<a class="homeLink" href="project-qbmftu.html">QuickBooks Mobile First Time Use  <span class="text-larger">&rarr;</span></a>
+                <a href="project-qbmftu.html">
+                  <figure class="flex-box spacebetween">
+                    <img class="col-4" src="images/thumb_ftu_intro_01.gif" alt="QBM sign in" />
+                    <img class="col-4" src="images/thumb_ftu_intro_02.gif" alt="QBM tips" />
+                    <img class="col-4" src="images/thumb_ftu_intro_03.gif" alt="QBM wizard" />
+                  </figure>
+                </a>
+          </section>
+        </div>
       </div>
     </div>
 
-    <hr>
-
-    <div class="grid">
-      <div class="row">
-        <section class="readingCol">
-        	<a class="homeLink" href="project-qbmtablet.html">QuickBooks Mobile for Android Tablet  <span class="text-larger">&rarr;</span></a>
-      	      <a href="project-qbmtablet.html">
-                <figure>
-                  <img class="hero" src="images/tablet_framed_hero_1x.jpg" srcset="images/tablet_framed_hero_1x.jpg 1x, images/tablet_framed_hero_2x.jpg 2x" alt="QBM for Android Tablet" />
-                </figure>
-              </a>
-        </section>
+    <div id="content-code" class="hide">
+      <div class="grid">
+        <div class="row">
+          <section class="readingCol">
+            <a class="homeLink" href="https://github.com/chrissygonzalez/sinatra-glitter-text" target="_blank">Sinatra Glitter Text  <span class="text-smaller normal">(on Github)</span> <span class="text-larger">&rarr;</span></a>
+                <a href="https://github.com/chrissygonzalez/sinatra-glitter-text" target="_blank">
+                  <figure>
+                    <img class="hero" src="images/ruby-glitter.gif" alt="Glitter Text example" />
+                  </figure>
+                </a>
+                <p class="caption">Just imagine the possibilities</p>
+                <p>I built Sinatra Glitter Text for the Flatiron School’s Online Web Dev program’s second project (a CRUD app built in Ruby and running on Sinatra). It lets you create an account, sign in to view your own glitter texts, and of course, create / read / update / and delete them. For a little more detail on my development procress, check out this <a class="a-text" alt="link to blog post" href="https://chrissygonzalez.github.io/lets_get_glittery" target="_blank">blog post</a> about it.</p>
+          </section>
+        </div>
       </div>
-    </div>
 
-    <hr>
+      <hr>
 
-    <div class="grid">
-      <div class="row">
-        <section class="readingCol">
-        	<a class="homeLink" href="project-qbmftu.html">QuickBooks Mobile First Time Use  <span class="text-larger">&rarr;</span></a>
-              <a href="project-qbmftu.html">
-                <figure class="flex-box spacebetween">
-                  <img class="col-4" src="images/thumb_ftu_intro_01.gif" alt="QBM sign in" />
-                  <img class="col-4" src="images/thumb_ftu_intro_02.gif" alt="QBM tips" />
-                  <img class="col-4" src="images/thumb_ftu_intro_03.gif" alt="QBM wizard" />
-                </figure>
-              </a>
-        </section>
+      <div class="grid">
+        <div class="row">
+          <section class="readingCol">
+            <a class="homeLink" href="https://github.com/chrissygonzalez/nyc-subway-status" target="_blank">NYC Subway Status Gem  <span class="text-smaller normal">(on Github)</span> <span class="text-larger">&rarr;</span></a>
+                <a href="https://github.com/chrissygonzalez/nyc-subway-status" target="_blank">
+                  <figure>
+                    <img class="hero" src="images/ruby-subway_1x.png" srcset="images/ruby-subway_1x.png 1x, images/ruby-subway_2x.png 2x" alt="NYC Subway Status gem" />
+                  </figure>
+                </a>
+                <p class="caption">An MTA CLI</p>
+                <p>NYC Subway Status was my first Flatiron School project, a web-scraping CLI app built in Ruby. As any commuter who regularly rides the subway can attest, it’s important to know how the trains are running – why not check their status on the command line? If you’d like to know more about how I built NYC Subway Status, here’s a slightly wordy <a class="a-text" alt="link to blog post" href="https://chrissygonzalez.github.io/writing_a_gem_is_truly_outrageous" target="_blank">blog post</a> about the process. If you’d like to install it as a Ruby gem, you can find it here: <a class="a-text" alt="link to Ruby gems page" href="https://rubygems.org/gems/nyc_subway_status" target="_blank">rubygems.org</a>.</p>
+          </section>
+        </div>
       </div>
     </div>
 
@@ -116,7 +160,7 @@
 		        		<a class="contactlink" href="https://github.com/chrissygonzalez?tab=repositories" target="_blank"><span class="icon">&#xf113;</span>GitHub</a>
 		        	</li>
               <li>
-                <a class="contactlink" href="images/chrissygonzalez-productdesigner-2017.pdf" target="_blank"><span class="icon">&#xf1c1;</span>Resume</a>
+                <a class="contactlink" href="images/chrissygonzalez-productdesigner-2018.pdf" target="_blank"><span class="icon">&#xf1c1;</span>Resume</a>
               </li>
 		        </ul>
               </section>

@@ -33,85 +33,107 @@
       <section class="readingCol">
         <!-- <a class="contactlink projecthome" href="project-etsytools.html">&larr; Internal Tools at Etsy</a> -->
       <h1 class="projecth1">MongoDB Customer Support Portal</h1>
-        <p>MongoDB customers are able to request support online, but the web portal experience is confusing and limited to signed-in users with specific product plans. From December 2017 to August 2018, I worked on a redesign of the Customer Support portal to make it more intuitive, address known problems, and provide options for all users. [image could be a screenshot of a portal page, or an illustration from one of the graphics]</p>
+        <p>MongoDB customers are able to request help online, but the user experience is confusing and only available to accounts with paid support subscriptions. From December 2017 to August 2018, I worked on a redesign of the Customer Support portal to make it more intuitive, address known problems, and provide options for all users.</p>
       
-<!--       <figure>
-        <img src="../images/etsy_vetting-shop.gif" alt="gif of shop and confetti" />
-        <figcaption>Hooray! An approved shop</figcaption>
-      </figure> -->
-
-        <h3 class="box">Background</h3>
-        <p>MongoDB has an incredible support organization staffed by deeply technical support engineers, but there hadn’t been a dedicated designer on the team until I joined. One of a number of support tools, the customer-facing Support Portal was functional but had a backlog of consistent problems and a long list of feature improvements that needed design attention. The portal had also been built using an older version of the MongoDB design system, which meant it was in need of a visual update.</p>
       <figure>
-       <a class="fancybox fancybox.image" rel="group1" title="How shops were requested and reviewed" href="../images/etsy_vetting-before_2x.png">
-        <img src="../images/etsy_vetting-before_1x.png" srcset="../images/etsy_vetting-before_1x.png 1x, ../images/etsy_vetting-before_2x.png 2x" alt="existing workflow diagram" />
-      </a>
-        <figcaption>This could be a few screens from the old portal</figcaption>
+        <img class="border" src="../images/mdb-portal-02_1x.png" srcset="../images/mdb-portal-02_1x.png 1x, ../images/mdb-portal-02_2x.png 2x" alt="customer support portal" />
+        <figcaption>Customer Support Portal signed-in home</figcaption>
       </figure>
 
-      <h3 class="box">The Starting Point</h3>
-
-      <p>This project grew out of a smaller request to make a few updates to the way knowledge base articles were organized and displayed. I had to spend time with the Portal to understand where the knowledge base fit in, and a few things struck me as odd. First, there was no Help Center or Support Home on the MongoDB marketing site – support either existed as a paid, signed-in service or customers would have to somehow find our Google Group and Stack Exchange answers on their own. Second, we didn't make any attempts to let users find answers on their own before opening cases. There were also a number of consistent problems and questions (changing owner to admin, managing distribution groups). Add the competitive audit. [images should be existing and competitive audit]</p>
-      <figure class="flex-box spacebetween">
-      <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="List of shop review requests" href="../images/etsy_vetting-task-00_2x.png">
-        <img src="../images/etsy_vetting-task-00_1x.png" srcset="../images/etsy_vetting-task-00_1x.png 1x, ../images/etsy_vetting-task-00_2x.png 2x" alt="list of shop review requests" />
+        <h3 class="box">Background</h3>
+        <p>MongoDB has an incredible support organization full of deeply technical support engineers, but they hadn’t had a dedicated designer until I joined. The Customer Support Portal, where customers request help and get updates on their cases, was functional, but it had a backlog of consistent problems and a long list of feature improvements that needed design attention. The portal had also been built using an older version of the MongoDB design system, which meant it was in need of a visual update.</p>
+      <figure>
+       <a class="fancybox fancybox.image" rel="group1" title="The existing Customer Support Portal" href="../images/mdb-portal-03_2x.jpg">
+        <img src="../images/mdb-portal-03_1x.jpg" srcset="../images/mdb-portal-03_1x.jpg 1x, ../images/mdb-portal-03_2x.jpg 2x" alt="existing customer portal" />
       </a>
-      <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="List of shops to be reviewed" href="../images/etsy_vetting-task-01_2x.png">
-        <img src="../images/etsy_vetting-task-01_1x.png" srcset="../images/etsy_vetting-task-01_1x.png 1x, ../images/etsy_vetting-task-01_2x.png 2x" alt="list of shops to be reviewed" />
-      </a>
-      <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Shop to be reviewed" href="../images/etsy_vetting-task-02_2x.png">
-        <img src="../images/etsy_vetting-task-02_1x.png" srcset="../images/etsy_vetting-task-02_1x.png 1x, ../images/etsy_vetting-task-02_2x.png 2x" alt="shop to be reviewed" />
-      </a>
-    </figure>
-    <p class="caption">Change these</p>
+        <figcaption>The existing Customer Support Portal</figcaption>
+      </figure>
 
-      <h3 class="box">Proposal</h3>
+      <h3 class="box">Competitive Audit</h3>
 
-      <p>Describe the Help Center and other proposals in the first draft, as well as changes from feedback.</p>
+      <p>This project, my first introduction to the customer-facing side of our support offering, grew out of a smaller effort to update a small part of the knowledge base. I did a quick survey of the entire Customer Portal as a way to get started, and a few things struck me as odd. First, there was no Help Center or Support Home on the MongoDB marketing site – support was either a paid, signed-in service or else customers had to find MongoDB’s Google Group and Stack Exchange answers on their own. Second, we didn’t try to deflect unnecessary case creation by offering common answers and resources on the support site. Third, searching our JIRA backlog surfaced consistent problems we’d known about for years but hadn’t addressed.</p>
+
+      <p>I wanted to make a case for making larger improvements to the Customer Portal, so I looked for examples of great support sites and gathered them into a competitive audit. I tried to focus on companies that sell technical or developer-focused tools, as well as companies known for a great online support experience.</p>
 
       <figure class="flex-box spacebetween">
-      <a class="projectImg fancybox fancybox.image col-3" rel="group3" title="Information about a shop" href="../images/etsy_vetting-modules-01_2x.png">
-        <img src="../images/etsy_vetting-modules-01_1x.png" srcset="../images/etsy_vetting-modules-01_1x.png 1x, ../images/etsy_vetting-modules-01_2x.png 2x" alt="information about a shop" />
+      <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Competitive Support Audit: patterns" href="../images/mdb-audit-01_2x.png">
+        <img src="../images/mdb-audit-01_1x.png" srcset="../images/mdb-audit-01_1x.png 1x, ../images/mdb-audit-01_2x.png 2x" alt="competitive support audit" />
       </a>
-      <a class="projectImg fancybox fancybox.image col-3" rel="group3" title="Content from a shop's about page" href="../images/etsy_vetting-modules-02_2x.png">
-        <img src="../images/etsy_vetting-modules-02_1x.png" srcset="../images/etsy_vetting-modules-02_1x.png 1x, ../images/etsy_vetting-modules-02_2x.png 2x" alt="content from a shop's about page" />
+      <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Competitive Support Audit: Atlassian" href="../images/mdb-audit-02_2x.png">
+        <img src="../images/mdb-audit-02_1x.png" srcset="../images/mdb-audit-02_1x.png 1x, ../images/mdb-audit-02_2x.png 2x" alt="competitive support audit" />
       </a>
-      <a class="projectImg fancybox fancybox.image col-3" rel="group3" title="A seller's history" href="../images/etsy_vetting-modules-03_2x.png">
-        <img src="../images/etsy_vetting-modules-03_1x.png" srcset="../images/etsy_vetting-modules-03_1x.png 1x, ../images/etsy_vetting-modules-03_2x.png 2x" alt="a seller's history" />
+      <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Competitive Support Audit: Heroku" href="../images/mdb-audit-03_2x.png">
+        <img src="../images/mdb-audit-03_1x.png" srcset="../images/mdb-audit-03_1x.png 1x, ../images/mdb-audit-03_2x.png 2x" alt="competitive support audit" />
       </a>
-      <a class="projectImg fancybox fancybox.image col-3" rel="group3" title="Final shop info tab" href="../images/etsy_vetting-modules-04_2x.png">
-        <img src="../images/etsy_vetting-modules-04_1x.png" srcset="../images/etsy_vetting-modules-04_1x.png 1x, ../images/etsy_vetting-modules-04_2x.png 2x" alt="final shop info tab" />
+      <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Competitive Support Audit: Segment" href="../images/mdb-audit-04_2x.png">
+        <img src="../images/mdb-audit-04_1x.png" srcset="../images/mdb-audit-04_1x.png 1x, ../images/mdb-audit-04_2x.png 2x" alt="competitive support audit" />
+      </a>
+      <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Competitive Support Audit: Slack" href="../images/mdb-audit-05_2x.png">
+        <img src="../images/mdb-audit-05_1x.png" srcset="../images/mdb-audit-05_1x.png 1x, ../images/mdb-audit-05_2x.png 2x" alt="competitive support audit" />
+      </a>
+      <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Competitive Support Audit: Square" href="../images/mdb-audit-06_2x.png">
+        <img src="../images/mdb-audit-06_1x.png" srcset="../images/mdb-audit-06_1x.png 1x, ../images/mdb-audit-06_2x.png 2x" alt="competitive support audit" />
       </a>
     </figure>
-    <p class="caption">change these</p>
+    <p class="caption">Competitive Support Audit</p>
 
-      <h3 class="box">Added features</h3>
+      <h3 class="box">Sketches and diagrams</h3>
 
-      <p>this can be about adding university and professional services, and reorganizing by project.</p>
+      <p>At first, I spent a lot of time sorting through the existing portal, in order to reorganize it into something that made a little more sense. I like to begin the actual design process by giving form to what I know and sketching how things might work before I get into design software.</p>
 
       <figure class="flex-box spacebetween">
-      <a class="projectImg fancybox fancybox.image col-6" rel="group4" title="We added color coding to make the request tasks more scannable" href="../images/etsy_vetting-final-01_2x.png">
-        <img src="../images/etsy_vetting-final-01_1x.png" class="border" srcset="../images/etsy_vetting-final-01_1x.png 1x, ../images/etsy_vetting-final-01_2x.png 2x" alt="color coding to make request tasks more scannable" />
+      <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="potential support portal sitemap" href="../images/mdb-portal-sketch-01_2x.png">
+        <img src="../images/mdb-portal-sketch-01_1x.png" srcset="../images/mdb-portal-sketch-01_1x.png 1x, ../images/mdb-portal-sketch-01_2x.png 2x" alt="Support Portal sketch" />
       </a>
-      <a class="projectImg fancybox fancybox.image col-6" rel="group4" title="The vetting request form could take multiple kinds of input" href="../images/etsy_vetting-final-02_2x.png">
-        <img src="../images/etsy_vetting-final-02_1x.png" class="border" srcset="../images/etsy_vetting-final-02_1x.png 1x, ../images/etsy_vetting-final-02_2x.png 2x" alt="vetting request form" />
+      <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="support screen inventory" href="../images/mdb-portal-sketch-02_2x.png">
+        <img src="../images/mdb-portal-sketch-02_1x.png" srcset="../images/mdb-portal-sketch-02_1x.png 1x, ../images/mdb-portal-sketch-02_2x.png 2x" alt="Support Portal sketch" />
+      </a>
+      <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="customer-facing vs internal pages" href="../images/mdb-portal-sketch-03_2x.png">
+        <img src="../images/mdb-portal-sketch-03_1x.png" srcset="../images/mdb-portal-sketch-03_1x.png 1x, ../images/mdb-portal-sketch-03_2x.png 2x" alt="Support Portal sketch" />
+      </a>
+      <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="general site map" href="../images/mdb-portal-sketch-04_2x.png">
+        <img src="../images/mdb-portal-sketch-04_1x.png" srcset="../images/mdb-portal-sketch-04_1x.png 1x, ../images/mdb-portal-sketch-04_2x.png 2x" alt="Support Portal sketch" />
+      </a>
+      <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="organizing around the concept of projects" href="../images/mdb-portal-sketch-05_2x.png">
+        <img src="../images/mdb-portal-sketch-05_1x.png" srcset="../images/mdb-portal-sketch-05_1x.png 1x, ../images/mdb-portal-sketch-05_2x.png 2x" alt="Support Portal sketch" />
+      </a>
+      <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="flow between support form and support tools" href="../images/mdb-portal-sketch-06_2x.png">
+        <img src="../images/mdb-portal-sketch-06_1x.png" srcset="../images/mdb-portal-sketch-06_1x.png 1x, ../images/mdb-portal-sketch-06_2x.png 2x" alt="Support Portal sketch" />
       </a>
     </figure>
-    <p class="caption">Change these</p>
+    <p class="caption">Early sketches and diagrams</p>
 
-      <h3 class="box">Implementation and Testing</h3>
+      <h3 class="box">First draft</h3>
 
-      <p>this can be about adding university and professional services, and reorganizing by project.</p>
+      <p>My goals for the portal redesign were to fulfill the knowledge base team’s original requests while also trying to: a) make the site organization more intuitive, b) clarify email list and team management options, c) provide resources for both paid and community customers, d) align visual style with current branding, and e) take a first pass at letting users self-help. This first draft focused on site organization, resources for all, self-help, and the knowledge base.</p>
 
       <figure class="flex-box spacebetween">
-      <a class="projectImg fancybox fancybox.image col-6" rel="group4" title="We added color coding to make the request tasks more scannable" href="../images/etsy_vetting-final-01_2x.png">
-        <img src="../images/etsy_vetting-final-01_1x.png" class="border" srcset="../images/etsy_vetting-final-01_1x.png 1x, ../images/etsy_vetting-final-01_2x.png 2x" alt="color coding to make request tasks more scannable" />
-      </a>
-      <a class="projectImg fancybox fancybox.image col-6" rel="group4" title="The vetting request form could take multiple kinds of input" href="../images/etsy_vetting-final-02_2x.png">
-        <img src="../images/etsy_vetting-final-02_1x.png" class="border" srcset="../images/etsy_vetting-final-02_1x.png 1x, ../images/etsy_vetting-final-02_2x.png 2x" alt="vetting request form" />
-      </a>
-    </figure>
-    <p class="caption">Change these</p>
+        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="Proposal for changing the marketing site footer to include support" href="../images/mdb-portal-v1-01_2x.png">
+          <img src="../images/mdb-portal-v1-01_1x.png" class="border" srcset="../images/mdb-portal-v1-01_1x.png 1x, ../images/mdb-portal-v1-01_2x.png 2x" alt="portal footer" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="A Help Center for all users" href="../images/mdb-portal-v1-02_2x.png">
+          <img src="../images/mdb-portal-v1-02_1x.png" class="border" srcset="../images/mdb-portal-v1-02_1x.png 1x, ../images/mdb-portal-v1-02_2x.png 2x" alt="help center" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="Signed-in home" href="../images/mdb-portal-v1-03_2x.png">
+          <img src="../images/mdb-portal-v1-03_1x.png" class="border" srcset="../images/mdb-portal-v1-03_1x.png 1x, ../images/mdb-portal-v1-03_2x.png 2x" alt="signed-in home" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="Knowledge Base home" href="../images/mdb-portal-v1-04_2x.png">
+          <img src="../images/mdb-portal-v1-04_1x.png" class="border" srcset="../images/mdb-portal-v1-04_1x.png 1x, ../images/mdb-portal-v1-04_2x.png 2x" alt="knowledge base home" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="Knowledge base search results" href="../images/mdb-portal-v1-05_2x.png">
+          <img src="../images/mdb-portal-v1-05_1x.png" class="border" srcset="../images/mdb-portal-v1-05_1x.png 1x, ../images/mdb-portal-v1-05_2x.png 2x" alt="knowledge base search results" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="A knowledge base article" href="../images/mdb-portal-v1-06_2x.png">
+          <img src="../images/mdb-portal-v1-06_1x.png" class="border" srcset="../images/mdb-portal-v1-06_1x.png 1x, ../images/mdb-portal-v1-06_2x.png 2x" alt="knowledge base article" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="New case form" href="../images/mdb-portal-v1-07_2x.png">
+          <img src="../images/mdb-portal-v1-07_1x.png" class="border" srcset="../images/mdb-portal-v1-07_1x.png 1x, ../images/mdb-portal-v1-07_2x.png 2x" alt="new case form" />
+        </a>
+        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="All cases" href="../images/mdb-portal-v1-08_2x.png">
+          <img src="../images/mdb-portal-v1-08_1x.png" class="border" srcset="../images/mdb-portal-v1-08_1x.png 1x, ../images/mdb-portal-v1-08_2x.png 2x" alt="all cases" />
+        </a>
+      </figure>
+    <p class="caption">First draft of the portal redesign</p>
 
     </section>
     </div>

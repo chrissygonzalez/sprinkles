@@ -34,7 +34,7 @@
         <!-- <a class="contactlink projecthome" href="project-etsytools.html">&larr; Internal Tools at Etsy</a> -->
       <h1 class="projecth1">MongoDB Customer Support Portal</h1>
         <p>MongoDB customers are able to request help online, but the user experience is confusing and only available to accounts with paid support subscriptions. From December 2017 to August 2018, I worked on a redesign of the Customer Support portal to make it more intuitive, address known problems, and provide options for all users.</p>
-      
+
       <figure>
         <img class="border" src="../images/mdb-portal-02_1x.png" srcset="../images/mdb-portal-02_1x.png 1x, ../images/mdb-portal-02_2x.png 2x" alt="customer support portal" />
         <figcaption>Customer Support Portal signed-in home</figcaption>
@@ -105,7 +105,7 @@
 
       <h3 class="box">First draft</h3>
 
-      <p>My goals for the portal redesign were to fulfill the knowledge base team’s original requests while also trying to: a) make the site organization more intuitive, b) clarify email list and team management options, c) provide resources for both paid and community customers, d) align visual style with current branding, and e) take a first pass at letting users self-help. This first draft focused on site organization, resources for all, self-help, and the knowledge base.</p>
+      <p>MongoDB has a pretty robust design system for constructing pages and components, which I took advantage of for the first round of wireframes. My goals for the redesign were to fulfill the knowledge base team’s original request while also trying to: a) make the site organization more intuitive, b) clarify email list and team management options, c) provide resources for both paid and community customers, d) align visual style with current branding, and e) take a first pass at letting users self-help. This first version focused on site organization, resources for all, self-help, and the knowledge base.</p>
 
       <figure class="flex-box spacebetween">
         <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="Proposal for changing the marketing site footer to include support" href="../images/mdb-portal-v1-01_2x.png">
@@ -135,11 +135,18 @@
       </figure>
     <p class="caption">First draft of the portal redesign</p>
 
-    <h3 class="box">Revised draft</h3>
+    <h3 class="box">Process and refinements</h3>
 
-      <p>Write description here</p>
+      <p>Since this was a project largely of my own creation, I started by taking the first version and sharing it around to socialize the idea of it, then collecting feedback and starting the process over again. It worked pretty well – at some point, we started discussing new features, like adding MongoDB University activation links or creating an overview of Professional Services appointments, only in terms of the ‘new version’ of the portal.</p>
+
+      <p>As for meeting my initial goals, the knowledge base team mainly wanted better text styling, which I handled using the MongoDB documentation style, and search tagging, which will be done by the engineers. Site organization was improved by simplifying the navigation structure and organizing project-level information (projects are a Salesforce constraint) into projects where it made sense. That made it easy to give email lists and teams their own pages, too. I added the Help Center and used it to list all of our documentation, training, and community resources, as well as FAQs. The signed-in home has more browsable self-help content from the knowledge base and University training, if it comes with a user’s subscription. And I imported the CSS from our design system and built static versions of the main pages to make it easier to build in a style consistent with our other products.</p>
+
+      <p>As of late August 2018, I’m in the process of testing the redesign with existing users, many of whom are database administrators or architects within large companies, and updating based on their feedback. We hope to release the new version to customers in late fall. There aren’t many defined metrics for success on this project, but we do expect to see a reduction in common problems and an increase in knowledge base engagement. I also think there should be an increase in engagement with training materials and community resources, which would benefit many of our customers, free and paid.</p>
 
       <figure class="flex-box spacebetween">
+        <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Annotated portal site map" href="../images/mdb-portal-map_2x.png">
+          <img src="../images/mdb-portal-map_1x.png" class="border" srcset="../images/mdb-portal-map_1x.png 1x, ../images/mdb-portal-map_2x.png 2x" alt="portal map" />
+        </a>
         <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Signed-out Help Center" href="../images/mdb-portal-v2-01_2x.png">
           <img src="../images/mdb-portal-v2-01_1x.png" class="border" srcset="../images/mdb-portal-v2-01_1x.png 1x, ../images/mdb-portal-v2-01_2x.png 2x" alt="Signed-out Help Center" />
         </a>
@@ -149,15 +156,12 @@
         <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="All cases" href="../images/mdb-portal-v2-03_2x.png">
           <img src="../images/mdb-portal-v2-03_1x.png" class="border" srcset="../images/mdb-portal-v2-03_1x.png 1x, ../images/mdb-portal-v2-03_2x.png 2x" alt="All cases" />
         </a>
+
         <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="An individual case" href="../images/mdb-portal-v2-04_2x.png">
           <img src="../images/mdb-portal-v2-04-thumb_1x.png" class="border" srcset="../images/mdb-portal-v2-04-thumb_1x.png 1x, ../images/mdb-portal-v2-04-thumb_2x.png 2x" alt="An individual case" />
         </a>
-
         <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Knowledge base home" href="../images/mdb-portal-v2-05_2x.png">
           <img src="../images/mdb-portal-v2-05_1x.png" class="border" srcset="../images/mdb-portal-v2-05_1x.png 1x, ../images/mdb-portal-v2-05_2x.png 2x" alt="Knowledge base home" />
-        </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Knowledge base search results" href="../images/mdb-portal-v2-06_2x.png">
-          <img src="../images/mdb-portal-v2-06_1x.png" class="border" srcset="../images/mdb-portal-v2-06_1x.png 1x, ../images/mdb-portal-v2-06_2x.png 2x" alt="Knowledge base search results" />
         </a>
         <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Knowledge base article" href="../images/mdb-portal-v2-07_2x.png">
           <img src="../images/mdb-portal-v2-07-thumb_1x.png" class="border" srcset="../images/mdb-portal-v2-07-thumb_1x.png 1x, ../images/mdb-portal-v2-07-thumb_2x.png 2x" alt="Knowledge base article" />
@@ -179,6 +183,7 @@
           <img src="../images/mdb-portal-v2-12_1x.png" class="border" srcset="../images/mdb-portal-v2-12_1x.png 1x, ../images/mdb-portal-v2-12_2x.png 2x" alt="portal footer" />
         </a>
       </figure>
+      <p class="caption">Latest version of the portal redesign</p>
 
     </section>
     </div>

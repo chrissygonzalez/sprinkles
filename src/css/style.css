@@ -24,6 +24,10 @@ hr {
   margin-top: 40px;
 }
 
+button {
+  -webkit-appearance: none;
+  appearance: none;
+}
 /*
 ****************
 GRID
@@ -270,12 +274,12 @@ HOMEPAGE BUTTONS
   border: 2px solid #1a1a1a;
   opacity: 1;
   animation: 1s fade-out 1;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .hide {
   display: none;
-  animation: 1s fade-out 1;  
+  animation: 1s fade-out 1;
 }
 
 @keyframes fade-out {

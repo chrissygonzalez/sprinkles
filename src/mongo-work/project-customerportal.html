@@ -33,7 +33,7 @@
       <section class="readingCol">
         <!-- <a class="contactlink projecthome" href="project-etsytools.html">&larr; Internal Tools at Etsy</a> -->
       <h1 class="projecth1">MongoDB Support Portal</h1>
-        <p>MongoDB customers are able to request help online, but the user experience is confusing and only available to accounts with paid support subscriptions. From December 2017 to August 2018, I worked on a redesign of the Customer Support portal to make it more intuitive, address known problems, and provide options for all users.</p>
+        <p>MongoDB customers can get help online, but the user experience is confusing and only available to accounts with paid support subscriptions. From December 2017 to August 2018, I worked on a redesign of the Customer Support portal to make it more intuitive, address known problems, and provide options for all users.</p>
 
       <figure>
         <img class="border" src="../images/mdb-portal-02_1x.png" srcset="../images/mdb-portal-02_1x.png 1x, ../images/mdb-portal-02_2x.png 2x" alt="customer support portal" />
@@ -51,9 +51,7 @@
 
       <h3 class="box">Competitive Audit</h3>
 
-      <p>This project, my first introduction to the customer-facing side of our support offering, grew out of a smaller effort to update a small part of the knowledge base. I did a quick survey of the entire Customer Portal as a way to get started, and a few things struck me as odd. First, there was no Help Center or Support Home on the MongoDB marketing site – support was either a paid, signed-in service or else customers had to find MongoDB’s Google Group and Stack Exchange answers on their own. Second, we didn’t try to deflect unnecessary case creation by offering common answers and resources on the support site. Third, searching our JIRA backlog surfaced consistent problems we’d known about for years but hadn’t addressed.</p>
-
-      <p>I wanted to make a case for making larger improvements to the Customer Portal, so I looked for examples of great support sites and gathered them into a competitive audit. I tried to focus on companies that sell technical or developer-focused tools, as well as companies known for a great online support experience.</p>
+      <p>This project was my first for the customer-facing side of MongoDB support. It started with an update to the knowledge base articles but quickly grew into a larger effort. I had to make a case for making larger improvements to the Customer Portal, so I looked for examples of great support sites and gathered them into a competitive audit.</p>
 
       <figure class="flex-box spacebetween">
       <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="Competitive Support Audit: patterns" href="../images/mdb-audit-01_2x.png">
@@ -79,7 +77,7 @@
 
       <h3 class="box">Sketches and diagrams</h3>
 
-      <p>At first, I spent a lot of time sorting through the existing portal, in order to reorganize it into something that made a little more sense. I like to begin the actual design process by giving form to what I know and sketching how things might work before I get into design software.</p>
+      <p>At first, I spent a lot of time sorting through the existing portal and trying to reorganize it into something that made a little more sense.</p>
 
       <figure class="flex-box spacebetween">
       <a class="projectImg fancybox fancybox.image col-4" rel="group3" title="potential support portal sitemap" href="../images/mdb-portal-sketch-01_2x.png">
@@ -103,45 +101,11 @@
     </figure>
     <p class="caption">Early sketches and diagrams</p>
 
-      <h3 class="box">First draft</h3>
-
-      <p>MongoDB has a pretty robust design system for constructing pages and components, which I took advantage of for the first round of wireframes. My goals for the redesign were to fulfill the knowledge base team’s original request while also trying to: a) make the site organization more intuitive, b) clarify email list and team management options, c) provide resources for both paid and community customers, d) align visual style with current branding, and e) take a first pass at letting users self-help. This first version focused on site organization, resources for all, self-help, and the knowledge base.</p>
-
-      <figure class="flex-box spacebetween">
-        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="Proposal for changing the marketing site footer to include support" href="../images/mdb-portal-v1-01_2x.png">
-          <img src="../images/mdb-portal-v1-01_1x.png" class="border" srcset="../images/mdb-portal-v1-01_1x.png 1x, ../images/mdb-portal-v1-01_2x.png 2x" alt="portal footer" />
-        </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="A Help Center for all users" href="../images/mdb-portal-v1-02_2x.png">
-          <img src="../images/mdb-portal-v1-02-thumb_1x.png" class="border" srcset="../images/mdb-portal-v1-02-thumb_1x.png 1x, ../images/mdb-portal-v1-02-thumb_2x.png 2x" alt="help center" />
-        </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="Signed-in home" href="../images/mdb-portal-v1-03_2x.png">
-          <img src="../images/mdb-portal-v1-03_1x.png" class="border" srcset="../images/mdb-portal-v1-03_1x.png 1x, ../images/mdb-portal-v1-03_2x.png 2x" alt="signed-in home" />
-        </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="Knowledge Base home" href="../images/mdb-portal-v1-04_2x.png">
-          <img src="../images/mdb-portal-v1-04_1x.png" class="border" srcset="../images/mdb-portal-v1-04_1x.png 1x, ../images/mdb-portal-v1-04_2x.png 2x" alt="knowledge base home" />
-        </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="Knowledge base search results" href="../images/mdb-portal-v1-05_2x.png">
-          <img src="../images/mdb-portal-v1-05_1x.png" class="border" srcset="../images/mdb-portal-v1-05_1x.png 1x, ../images/mdb-portal-v1-05_2x.png 2x" alt="knowledge base search results" />
-        </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="A knowledge base article" href="../images/mdb-portal-v1-06_2x.png">
-          <img src="../images/mdb-portal-v1-06-thumb_1x.png" class="border" srcset="../images/mdb-portal-v1-06-thumb_1x.png 1x, ../images/mdb-portal-v1-06-thumb_2x.png 2x" alt="knowledge base article" />
-        </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="New case form" href="../images/mdb-portal-v1-07_2x.png">
-          <img src="../images/mdb-portal-v1-07_1x.png" class="border" srcset="../images/mdb-portal-v1-07_1x.png 1x, ../images/mdb-portal-v1-07_2x.png 2x" alt="new case form" />
-        </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group4" title="All cases" href="../images/mdb-portal-v1-08_2x.png">
-          <img src="../images/mdb-portal-v1-08_1x.png" class="border" srcset="../images/mdb-portal-v1-08_1x.png 1x, ../images/mdb-portal-v1-08_2x.png 2x" alt="all cases" />
-        </a>
-      </figure>
-    <p class="caption">First draft of the portal redesign</p>
-
     <h3 class="box">Process and refinements</h3>
 
-      <p>Since this was a project largely of my own creation, I started by taking the first version and sharing it around to socialize the idea of it, then collecting feedback and starting the process over again. It worked pretty well – at some point, we started discussing new features, like adding MongoDB University activation links or creating an overview of Professional Services appointments, only in terms of the ‘new version’ of the portal.</p>
+     <p>In the new portal design, I improved the knowledge base styling, simplified the navigation structure, and made the organization more intuitive. I also added a Help Center and more browsable self-help content. I imported the CSS from our design system and built some of the main pages to make it easier for engineers to work with.</p>
 
-      <p>As for meeting my initial goals, the knowledge base team mainly wanted better text styling, which I handled using the MongoDB documentation style, and search tagging, which will be done by the engineers. Site organization was improved by simplifying the navigation structure and organizing project-level information (projects are a Salesforce constraint) into projects where it made sense. That made it easy to give email lists and teams their own pages, too. I added the Help Center and used it to list all of our documentation, training, and community resources, as well as FAQs. The signed-in home has more browsable self-help content from the knowledge base and University training, if it comes with a user’s subscription. And I imported the CSS from our design system and built static versions of the main pages to make it easier to build in a style consistent with our other products.</p>
-
-      <p>As of late August 2018, I’m in the process of testing the redesign with existing users, many of whom are database administrators or architects within large companies, and updating based on their feedback. We hope to release the new version to customers in late fall. There aren’t many defined metrics for success on this project, but we do expect to see a reduction in common problems and an increase in knowledge base engagement. I also think there should be an increase in engagement with training materials and community resources, which would benefit many of our customers, free and paid.</p>
+      <p>As of late August 2018, I’m in the process of testing the redesign with existing users, and we hope to see a reduction in common problems and an increase in knowledge base engagement.</p>
 
       <figure class="flex-box spacebetween">
         <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Annotated portal site map" href="../images/mdb-portal-map_2x.png">
@@ -163,24 +127,12 @@
         <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Knowledge base home" href="../images/mdb-portal-v2-05_2x.png">
           <img src="../images/mdb-portal-v2-05_1x.png" class="border" srcset="../images/mdb-portal-v2-05_1x.png 1x, ../images/mdb-portal-v2-05_2x.png 2x" alt="Knowledge base home" />
         </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Knowledge base article" href="../images/mdb-portal-v2-07_2x.png">
-          <img src="../images/mdb-portal-v2-07-thumb_1x.png" class="border" srcset="../images/mdb-portal-v2-07-thumb_1x.png 1x, ../images/mdb-portal-v2-07-thumb_2x.png 2x" alt="Knowledge base article" />
-        </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Projects list" href="../images/mdb-portal-v2-08_2x.png">
-          <img src="../images/mdb-portal-v2-08_1x.png" class="border" srcset="../images/mdb-portal-v2-08_1x.png 1x, ../images/mdb-portal-v2-08_2x.png 2x" alt="Projects list" />
-        </a>
 
-        <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Project environments" href="../images/mdb-portal-v2-09_2x.png">
-          <img src="../images/mdb-portal-v2-09_1x.png" class="border" srcset="../images/mdb-portal-v2-09_1x.png 1x, ../images/mdb-portal-v2-09_2x.png 2x" alt="Project environments" />
-        </a>
         <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Project team" href="../images/mdb-portal-v2-10_2x.png">
           <img src="../images/mdb-portal-v2-10_1x.png" class="border" srcset="../images/mdb-portal-v2-10_1x.png 1x, ../images/mdb-portal-v2-10_2x.png 2x" alt="Project team" />
         </a>
         <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Project mailing lists" href="../images/mdb-portal-v2-11_2x.png">
           <img src="../images/mdb-portal-v2-11_1x.png" class="border" srcset="../images/mdb-portal-v2-11_1x.png 1x, ../images/mdb-portal-v2-11_2x.png 2x" alt="Project mailing lists" />
-        </a>
-        <a class="projectImg fancybox fancybox.image col-3" rel="group5" title="Products overview" href="../images/mdb-portal-v2-12_2x.png">
-          <img src="../images/mdb-portal-v2-12_1x.png" class="border" srcset="../images/mdb-portal-v2-12_1x.png 1x, ../images/mdb-portal-v2-12_2x.png 2x" alt="portal footer" />
         </a>
       </figure>
       <p class="caption">Latest version of the portal redesign</p>

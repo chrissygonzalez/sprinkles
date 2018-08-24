@@ -26,7 +26,8 @@ hr {
 
 button {
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 /*
 ****************
@@ -42,13 +43,19 @@ GRID
 .row {
   width: 100%;
   display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .row-center {
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .col-1 {
@@ -125,8 +132,8 @@ h3 {
   color: #030304;
   line-height: 22px;
   display: inline-block;
-  margin-top: 60px;
-  margin-bottom: 32px;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -194,10 +201,12 @@ figcaption {
 }
 
 .box {
-  border: 2px solid #78A79D;
-  color: #5E9C8E;
-  padding: 10px;
+  border-top: 4px solid #1a1a1a;
+  color: #1a1a1a;
+  padding: 10px 0;
   display: inline-block;
+  /*width: 50%;*/
+  /*background-color: #eaeaea;*/
 }
 
 .homeLink {
@@ -273,13 +282,20 @@ HOMEPAGE BUTTONS
   color: #1a1a1a;
   border: 2px solid #1a1a1a;
   opacity: 1;
-  animation: 1s fade-out 1;
+  -webkit-animation: 1s fade-out 1;
+          animation: 1s fade-out 1;
   pointer-events: none;
 }
 
 .hide {
   display: none;
-  animation: 1s fade-out 1;
+  -webkit-animation: 1s fade-out 1;
+          animation: 1s fade-out 1;
+}
+
+@-webkit-keyframes fade-out {
+  0%   { opacity: .75; }
+  100% { opacity: 1; }
 }
 
 @keyframes fade-out {
@@ -299,13 +315,25 @@ GENERAL CLASSES
 
 .flex-box {
   display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-align-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
 }
 
@@ -322,7 +350,9 @@ GENERAL CLASSES
 }
 
 .spacearound {
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
 
 /*
@@ -391,7 +421,10 @@ PROJECTS
 }
 
 .spacebetween {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .projectHeader {
@@ -524,7 +557,11 @@ MEDIA QUERIES
   }
 
   .summary {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .bio {

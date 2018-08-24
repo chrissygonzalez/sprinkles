@@ -592,4 +592,9 @@ MEDIA QUERIES
     display: none;
   }
 
+  .projectNav a {
+    display: inline;
+    width: 50%;
+  }
+
 }

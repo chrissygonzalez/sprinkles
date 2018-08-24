@@ -33,7 +33,7 @@
       <section class="readingCol">
         <!-- <a class="contactlink projecthome" href="project-etsytools.html">&larr; Internal Tools at Etsy</a> -->
       <h1 class="projecth1">Etsy Shop Review Tool</h1>
-        <p>Many teams at Etsy produce content that highlights specific items or sellers as part of their daily work. Every seller being considered for a feature was reviewed by a small team of marketplace experts, but the review process was slow and full of cumbersome workarounds. From September 2016 to April 2017, I worked on a set of tools to make reviewing shops and finding already reviewed shops easier, faster, and more efficient.</p>
+        <p>Many teams at Etsy highlight specific items or sellers as part of their daily work. Before a seller can be featured, they have to be reviewed by a small team, but the review process was slow and full of workarounds. From September 2016 to April 2017, I worked on a set of tools to make reviewing shops and finding already reviewed shops easier, faster, and more efficient.</p>
 
       <figure>
         <img src="../images/etsy_vetting-shop.gif" alt="gif of shop and confetti" />
@@ -41,7 +41,7 @@
       </figure>
 
         <h3 class="box">Existing processes</h3>
-        <p>Shop vetting had been an ongoing issue at Etsy, so when I started this project, there was already a lot of documentation available for review. I built on that body of research by identifying potential users of the new tool and interviewing them to understand how they were getting work done. After synthesizing my interview notes, two personas emerged: the ‘vetters’, or people who actually review the shops, and the ‘requesters’, or people who search for and collect shops to be reviewed.</p>
+        <p>There was already a lot of research about shop reviewing available. After reviewing it, I interviewed shop reviewers to understand more about how they were getting work done. Two personas emerged: the ‘vetters’, or people who actually review the shops, and the ‘requesters’, or people who search for and collect shops to be reviewed.</p>
       <figure>
        <a class="fancybox fancybox.image" rel="group1" title="How shops were requested and reviewed" href="../images/etsy_vetting-before_2x.png">
         <img src="../images/etsy_vetting-before_1x.png" srcset="../images/etsy_vetting-before_1x.png 1x, ../images/etsy_vetting-before_2x.png 2x" alt="existing workflow diagram" />
@@ -51,7 +51,7 @@
 
       <h3 class="box">Task flow</h3>
 
-      <p>The shop vetters used an internally-built task management tool to keep track of their non-vetting work, so it made sense to bring the vetting tasks into that tool as well. Vetting was shared between multiple teams with different kinds of expertise, so the first question was how tasks should flow between them. I built quick clickthrough prototypes to test two main directions: tasks passing through each team sequentially, or every team getting a copy of a task and reviewing in parallel. We were surprised that reviewing in parallel was the unanimous winner.</p>
+      <p>Shop vetters used an Etsy-built tool to keep track of their other work, so we knew that was where shop vetting would be done. A few different kinds of experts shared the vetting work, so the first question was how they would collaborate. I built quick prototypes to test the two main options: sharing tasks sequentially, or sharing tasks in parallel. We were surprised that reviewing in parallel was the unanimous winner.</p>
       <figure class="flex-box spacebetween">
       <a class="projectImg fancybox fancybox.image col-4" rel="group2" title="List of shop review requests" href="../images/etsy_vetting-task-00_2x.png">
         <img src="../images/etsy_vetting-task-00_1x.png" srcset="../images/etsy_vetting-task-00_1x.png 1x, ../images/etsy_vetting-task-00_2x.png 2x" alt="list of shop review requests" />
@@ -74,31 +74,11 @@
     </figure>
     <p class="caption">The sequential shop review task flow</p>
 
-      <h3 class="box">Shop content</h3>
-
-      <p>Once we understood how tasks would flow between vetting teams, the next step was to understand what information vetters needed to see to make a decision about a shop. I did a series of more in-depth interviews with representatives from each subject matter area and learned that everyone could make a decision based on a single superset of information. I gathered the data we had in existing views, added what was missing, reorganized it for vetting, and tested and iterated until it worked across the board. When we started to build this part of the tool, I gave the engineers a map of any data that was already in production, and they were able to build those sections much more quickly than from scratch.</p>
-
-      <figure class="flex-box spacebetween">
-      <a class="projectImg fancybox fancybox.image col-3" rel="group3" title="Information about a shop" href="../images/etsy_vetting-modules-01_2x.png">
-        <img src="../images/etsy_vetting-modules-01_1x.png" srcset="../images/etsy_vetting-modules-01_1x.png 1x, ../images/etsy_vetting-modules-01_2x.png 2x" alt="information about a shop" />
-      </a>
-      <a class="projectImg fancybox fancybox.image col-3" rel="group3" title="Content from a shop's about page" href="../images/etsy_vetting-modules-02_2x.png">
-        <img src="../images/etsy_vetting-modules-02_1x.png" srcset="../images/etsy_vetting-modules-02_1x.png 1x, ../images/etsy_vetting-modules-02_2x.png 2x" alt="content from a shop's about page" />
-      </a>
-      <a class="projectImg fancybox fancybox.image col-3" rel="group3" title="A seller's history" href="../images/etsy_vetting-modules-03_2x.png">
-        <img src="../images/etsy_vetting-modules-03_1x.png" srcset="../images/etsy_vetting-modules-03_1x.png 1x, ../images/etsy_vetting-modules-03_2x.png 2x" alt="a seller's history" />
-      </a>
-      <a class="projectImg fancybox fancybox.image col-3" rel="group3" title="Final shop info tab" href="../images/etsy_vetting-modules-04_2x.png">
-        <img src="../images/etsy_vetting-modules-04_1x.png" srcset="../images/etsy_vetting-modules-04_1x.png 1x, ../images/etsy_vetting-modules-04_2x.png 2x" alt="final shop info tab" />
-      </a>
-    </figure>
-    <p class="caption">Assembling, organizing, and testing shop content for vetters to review</p>
-
       <h3 class="box">Requests and integrations</h3>
 
-      <p>While we worked on the vetting tool, I also started to think about the process for requesting vetting and getting the results. We built a quick form to take requests and a very basic output report, but then did more research to understand what needs requesters had and adjusted accordingly. Etsy has another internal tool that lets users create collections of items, and the logical next step was to allow them to push collections to the vetting tool to get items approved for use. That integration was a little more undefined, so as part of the research phase, I created a few design provocations to get feedback on high-level ideas.</p>
+      <p>While we were building the vetting tool, I also designed a  form to take requests and a report that showed the results. Etsy has another internal tool for creating collections of items, so we also connected the two tools to make collecting and reviewing faster.</p>
 
-    <p>Measured by our metrics for success, which included an increase in vetting requests (due to a change in policy and increased ease of use), an increase in shops reviewed, and the number of approved shops available for use, this project was very successful. Vetters were able to review shops much more quickly, and teams that requested vetting were ecstatic to be able to see which shops had already been approved for use. My ideal next step would have been to create a searchable database of approved shops, but that was out of scope for this project.</p>
+    <p>Our metrics for success were to increase the number of vetting requests and the number of shops that were reviewed and approved, and by that measure, this project was very successful. Shop reviewing got much faster, and feature teams could see which shops had already been approved for use.</p>
 
       <figure class="flex-box spacebetween">
       <a class="projectImg fancybox fancybox.image col-6" rel="group4" title="We added color coding to make the request tasks more scannable" href="../images/etsy_vetting-final-01_2x.png">

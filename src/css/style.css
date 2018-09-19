@@ -136,6 +136,17 @@ h4 {
   font-weight: normal;
 }
 
+ol {
+  margin-bottom: 30px;
+  list-style-position: inside;
+}
+
+li {
+  color: #030304;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 15px;
+}
+
 a {
   font-weight: normal;
   font-size: 16px;

@@ -231,6 +231,10 @@ figcaption {
   text-decoration: none;
 }
 
+.margin-top-60 {
+  margin-top: 60px;
+}
+
 .merriweather {
   font-family: 'Merriweather';
 }
@@ -320,6 +324,10 @@ GENERAL CLASSES
   -webkit-align-items: center;
   align-items: center;
   padding: 10px;
+}
+
+.flex-start {
+  align-items: flex-start;
 }
 
 .readingCol {

@@ -32,30 +32,24 @@
     <div class="row">
       <section class="readingCol">
       <h1 class="projecth1">Class Cards</h1>
-      <p>Class Cards is my submission for the Google Interaction Design exercise. I chose the Names and Faces prompt, which is to “design an experience to help an educator match faces to names, with the goal of shortening the time needed to reach complete un-aided accuracy.”</p>
+      <p>Class Cards is my submission for the Google Interaction Design exercise. I chose the Names and Faces prompt, which asks for the designer to “design an experience to help an educator match faces to names, with the goal of shortening the time needed to reach complete un-aided accuracy.”</p>
 
       <figure>
-        <img class="hero" src="img/illustrations.png" srcset="img/illustrations.png 1x, img/illustrations@2x.png 2x" alt="Moon illustrations">
-        <figcaption>A few space-themed illustrations</figcaption>
+        <img class="hero" src="../images/goog-sketch-intro.png" srcset="../images/goog-sketch-intro_1x.png 1x, ../images/goog-sketch-intro_2x.png 2x" alt="Sketch">
+        <figcaption>Quiz sketches</figcaption>
       </figure>
 
       <h3 class="box">Teacher Types</h3>
-      <p>I started work by thinking about teachers and where they teach. Schools can be rich or poor. Students can stay in one classroom all day, or they can move around every period. Classes can be held in school rooms with desks, or they can be hands-on in a lab setting or out in the field. Although there’s a lot of variation, the main differentiator between them seems to be whether teachers stay with one class all day or teach multiple classes in periods.</p>
+      <p>I started work by thinking about teachers and where they teach. There’s a lot of variation in schools and classroom types, but at a high level, one of the main differences in context is whether a teacher stays with one class all day or whether they teach multiple classes in periods.</p>
 
-      <p>A single class has a limited number of names and faces to remember, but that can expand quickly with multiple classes. How many students might be in a class, and how many classes might be in a day? I did a quick search and found that <a class="a-text" href="https://nces.ed.gov/surveys/sass/tables/sass1112_2013314_t1s_007.asp" target="_blank">30 students</a> is an average class size, and school days can have up to <a class="a-text" href="https://www.quora.com/How-many-classes-does-an-American-high-school-student-usually-have-in-a-day" target="_blank">eight</a> <a class="a-text" href="https://talk.collegeconfidential.com/high-school-life/38419-what-how-many-periods-does-your-school-have.html" target="_blank">periods</a>. So a teacher with multiple classes might need to learn up to 240 names and faces, in chunks of 30.</p>
+      <p>A single class has a limited number of names and faces to remember, but that can expand quickly with multiple classes. How many students might be in a class, and how many classes might be in a day? I did a quick search and found that <a class="a-text" href="https://nces.ed.gov/surveys/sass/tables/sass1112_2013314_t1s_007.asp" target="_blank">30 students</a> is an average class size, and school days can have up to <a class="a-text" href="https://www.quora.com/How-many-classes-does-an-American-high-school-student-usually-have-in-a-day" target="_blank">eight</a> <a class="a-text" href="https://talk.collegeconfidential.com/high-school-life/38419-what-how-many-periods-does-your-school-have.html" target="_blank">periods</a>. So a teacher with multiple classes might need to learn up to 240 names and faces, in chunks of 30. I chose to focus on teachers with multiple classes, with the assumption that my solution could also scale down to meet the needs of a teacher with a single class.</p>
 
-      <figure class="flex-box spacebetween">
-      <a class="fancybox fancybox.image col-6 projectImg" rel="group1" title="Initial ideas and notes" href="img/sketch1@2x.jpg">
-        <img src="img/sketch1.jpg" srcset="img/sketch1.jpg 1x, img/sketch1@2x.jpg 2x" alt="design sketch" />
-      </a>
-      <a class="fancybox fancybox.image col-6 projectImg" rel="group1" title="Checklist of completed screens" href="img/sketch2@2x.jpg">
-        <img src="img/sketch2.jpg" srcset="img/sketch2.jpg 1x, img/sketch2@2x.jpg 2x" alt="design sketch" />
-      </a>
-    </figure>
-    <p class="caption">Initial sketches of the flow and a later checklist to keep track of progress</p>
+      <figure>
+        <img src="../images/goog-teacher-envs_2x.png"  alt="Classroom environments">
+      </figure>
 
       <h3 class="box">Learning Names</h3>
-      <p>Teachers have been learning their students names and faces for a long time, so I did a quick survey of methods they suggest. In a series of articles and blog posts, I gathered seven tips for learning names:</p>
+      <p>Teachers have been learning their students names and faces for a long time, so I thought they might be a good source for tips on doing it quickly. I found plenty of <a class="a-text" href="https://www.theguardian.com/education/2015/may/22/how-do-teachers-remember-childrens-names">articles</a> <a class="a-text" href="https://www.unl.edu/gradstudies/current/teaching/names">and</a> <a class="a-text" href="https://www.cmu.edu/teaching/solveproblem/strat-cheating/tips-studentnames.html">blog posts</a> on the topic, from which I gathered these seven tips for learning names:</p>
       <ol>
       	<li>Practice saying names out loud repeatedly.</li>
       	<li>Relate faces to interests.</li>
@@ -65,63 +59,146 @@
       	<li>Write, dance, or draw names and faces.</li>
       	<li>Have students sit in the same seats at first.</li>
       </ol>
-      <a class="fancybox fancybox.image" rel="group2" title="Earlier versions were a little more complicated, but once I settled on this being a contest, there were fewer cases to cover" href="img/moon_flow@2x.png">
-        <img class="hero" src="img/moon_flow.png" srcset="img/moon_flow.png 1x, img/moon_flow@2x.png 2x" alt="Moon Trip Application Flow">
-        </a>
-      </figure>
-      <p class="caption">A simple flow for applying to go to the moon</p>
 
       <h3 class="box">Flow and Sketches</h3>
 
-      <p>How would teachers get students’ photos? They would probably need to submit them. I spent some time thinking about how that flow might work and what teachers would need to manage it.</p>
+      <p>Once I knew something about learning names and how many the experience would need to accommodate, I started to think about how teachers could get students’ photos. Ideally, they would send them in before school started, so I spent some time thinking about how that flow might work.</p>
+      <figure>
+       <a class="fancybox fancybox.image" rel="group1" title="Teachers could invite students to send in photos" href="../images/goog-swimlane-flow_2x.png">
+        <img src="../images/goog-swimlane-flow_1x.png" srcset="../images/goog-swimlane-flow_1x.png 1x, ../images/goog-swimlane-flow_2x.png 2x" alt="flow diagram" />
+      </a>
+        <figcaption>Teachers could invite students to send in photos</figcaption>
+      </figure>
+
+      <p class="margin-top-60">I thought it would be fun to give students a chance for personal expression and allow teachers to associate interests, visualizations, and alliterative adjectives with names for quicker learning.</p>
 
       <figure class="flex-box spacebetween">
-      <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="This email is one way users could find out about the moon trip contest" href="img/intro_email@2x.png">
-        <img src="img/thumbs/thumb_promo_email.jpg" srcset="img/thumbs/thumb_promo_email.jpg 1x, img/thumbs/thumb_promo_email@2x.jpg 2x" alt="promotional email" />
+
+        <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="Sketch of student photo submission process" href="../images/goog-sketch-student_2x.png">
+          <img src="../images/goog-sketch-student.png" srcset="../images/goog-sketch-student_1x.png 1x, ../images/goog-sketch-student_2x.png 2x" alt="" />
+        </a>
+
+        <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="Teachers could customize what information to request and manage their class lists" href="../images/goog-sketch-teacher2_2x.png">
+          <img src="../images/goog-sketch-teacher2.png" srcset="../images/goog-sketch-teacher2_1x.png 1x, ../images/goog-sketch-teacher2_2x.png 2x" alt="" />
+        </a>
+
+        <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="Quizzes could be very visual" href="../images/goog-sketch-teacher3_2x.png">
+          <img src="../images/goog-sketch-teacher3.png" srcset="../images/goog-sketch-teacher3_1x.png 1x, ../images/goog-sketch-teacher3_2x.png 2x" alt="" />
+        </a>
+      </figure>
+    <p class="caption">Sketches of the student and teacher experiences</p>
+
+    <h3 class="box">Student Wireframes</h3>
+    <p>Although teachers are the primary user for this experience, the photo submission process made students a secondary user. I wireframed their experience to work through what information teachers might have available. <a href="https://invis.io/RSO5KEWHPNX" class="a-text" target="_blank">Clickable prototype</a></p>
+
+    <figure class="flex-box spacebetween">
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group4" title="" href="../images/goog-student-00-start_2x.png">
+        <img src="../images/goog-student-00-start.png" srcset="../images/goog-student-00-start_1x.png 1x, ../images/goog-student-00-start_2x.png 2x" alt="" />
       </a>
-      <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="A blog post and homepage promo could also publicize the moon trip" href="img/blog_promo@2x.png">
-        <img src="img/thumbs/thumb_homepg_promo.jpg" srcset="img/thumbs/thumb_homepg_promo.jpg 1x, img/thumbs/thumb_homepg_promo@2x.jpg 2x" alt="homepage promo" />
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group4" title="" href="../images/goog-student-01-02_2x.png">
+        <img src="../images/goog-student-01-02.png" srcset="../images/goog-student-01-02_1x.png 1x, ../images/goog-student-01-02_2x.png 2x" alt="" />
       </a>
-      <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="The moon trip marketing page" href="img/moon_marketing@2x.png">
-        <img src="img/thumbs/thumb_moon_mktg.jpg" srcset="img/thumbs/thumb_moon_mktg.jpg 1x, img/thumbs/thumb_moon_mktg@2x.jpg 2x" alt="marketing page" />
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group4" title="" href="../images/goog-student-02-02_2x.png">
+        <img src="../images/goog-student-02-02.png" srcset="../images/goog-student-02-02_1x.png 1x, ../images/goog-student-02-02_2x.png 2x" alt="" />
       </a>
-      <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="If users aren't signed in, they'll need to sign in or register before applying" href="img/moon_marketing_signin@2x.png">
-        <img src="img/thumbs/thumb_moon_mktg_signin.jpg" srcset="img/thumbs/thumb_moon_mktg_signin.jpg 1x, img/thumbs/thumb_moon_mktg_signin@2x.jpg 2x" alt="sign in form" />
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group4" title="" href="../images/goog-student-03-02_2x.png">
+        <img src="../images/goog-student-03-02.png" srcset="../images/goog-student-03-02_1x.png 1x, ../images/goog-student-03-02_2x.png 2x" alt="" />
       </a>
-       <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="The submit button is disabled until the form is complete and valid" href="img/apply_form_incomplete@2x.png">
-        <img src="img/thumbs/thumb_apply_incomplete.jpg" srcset="img/thumbs/thumb_apply_incomplete.jpg 1x, img/thumbs/thumb_apply_incomplete@2x.jpg 2x" alt="application form" />
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group4" title="" href="../images/goog-student-04-03_2x.png">
+        <img src="../images/goog-student-04-03.png" srcset="../images/goog-student-04-03_1x.png 1x, ../images/goog-student-04-03_2x.png 2x" alt="" />
       </a>
-      <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="Validation is necessary on a few fields, but not all" href="img/apply_form_validation@2x.png">
-        <img src="img/thumbs/thumb_apply_validate.jpg" srcset="img/thumbs/thumb_apply_validate.jpg 1x, img/thumbs/thumb_apply_validate@2x.jpg 2x" alt="application form" />
-      </a>
-      <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="When the form is complete and valid, the submit button is enabled." href="img/apply_form_complete@2x.png">
-        <img src="img/thumbs/thumb_apply_form_complete.jpg" srcset="img/thumbs/thumb_apply_form_complete.jpg 1x, img/thumbs/thumb_apply_form_complete@2x.jpg 2x" alt="application form" />
-      </a>
-      <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="The application was successfully submitted, and here are moon-related products on Etsy and a discount code" href="img/apply_success@2x.png">
-        <img src="img/thumbs/thumb_apply_success.jpg" srcset="img/thumbs/thumb_apply_success.jpg 1x, img/thumbs/thumb_apply_success@2x.jpg 2x" alt="successful application" />
-      </a>
-      <a class="fancybox fancybox.image col-4 projectImg" rel="group3" title="Congratulations email for accepted applicants" href="img/congrats_email@2x.png">
-        <img src="img/thumbs/thumb_congrats_email.jpg" srcset="img/thumbs/thumb_congrats_email.jpg 1x, img/thumbs/thumb_congrats_email@2x.jpg 2x" alt="congratulations email" />
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group4" title="" href="../images/goog-student-04-record-01_2x.png">
+        <img src="../images/goog-student-04-record-01.png" srcset="../images/goog-student-04-record-01_1x.png 1x, ../images/goog-student-04-record-01_2x.png 2x" alt="" />
       </a>
     </figure>
-    <p class="caption">Screens and emails that make up the moon trip application flow</p>
 
-    <h3 class="box">Wireframes</h3>
-    <p>I worked through three use cases in mini-wireframes. Clickable prototypes are here.</p>
-    <figure>
-      <a href="moon/moon_marketing.html" alt="HTML mockup">
-        <img class="hero" src="img/html_mockup.png" srcset="img/html_mockup.png 1x, img/html_mockup@2x.png 2x" alt="HTML mockup">
+    <h3 class="box">Teacher Wireframes</h3>
+    <p>In this experience, teachers would be able to navigate to a single class at a time and study those names in a variety of quizzes. I made wireframes to work through how they might set things up at first and then return to study. <a href="https://invis.io/5QO5KH9V9TF" class="a-text" target="_blank">Setup prototype</a> | <a href="https://invis.io/6RO5KI6A3MH" class="a-text" target="_blank">Study prototype</a></p>
+
+    <figure class="flex-box spacebetween">
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group5" title="" href="../images/goog-teacher-classes-00_2x.png">
+        <img src="../images/goog-teacher-classes-00.png" srcset="../images/goog-teacher-classes-00_1x.png 1x, ../images/goog-teacher-classes-00_2x.png 2x" alt="" />
       </a>
-      <figcaption>The live version of the moon marketing page</figcaption>
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group5" title="" href="../images/goog-teacher-classes-02_2x.png">
+        <img src="../images/goog-teacher-classes-02.png" srcset="../images/goog-teacher-classes-02_1x.png 1x, ../images/goog-teacher-classes-02_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group5" title="" href="../images/goog-teacher-classes-03_2x.png">
+        <img src="../images/goog-teacher-classes-03.png" srcset="../images/goog-teacher-classes-03_1x.png 1x, ../images/goog-teacher-classes-03_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group5" title="" href="../images/goog-teacher-quiz-01_2x.png">
+        <img src="../images/goog-teacher-quiz-01.png" srcset="../images/goog-teacher-quiz-01_1x.png 1x, ../images/goog-teacher-quiz-01_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group5" title="" href="../images/goog-teacher-quiz-03_2x.png">
+        <img src="../images/goog-teacher-quiz-03.png" srcset="../images/goog-teacher-quiz-03_1x.png 1x, ../images/goog-teacher-quiz-03_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group5" title="" href="../images/goog-teacher-quiz-05_2x.png">
+        <img src="../images/goog-teacher-quiz-05.png" srcset="../images/goog-teacher-quiz-05_1x.png 1x, ../images/goog-teacher-quiz-05_2x.png 2x" alt="" />
+      </a>
+
     </figure>
 
     <h3 class="box">High Fidelity</h3>
-    <p>I chose the main teacher scenario – having existing classes and studying their names – for high-fidelity mocks. Clickable prototypes are here.</p>
-    <figure>
-      <a href="moon/moon_marketing.html" alt="HTML mockup">
-        <img class="hero" src="img/html_mockup.png" srcset="img/html_mockup.png 1x, img/html_mockup@2x.png 2x" alt="HTML mockup">
+    <p>I chose the main teacher scenario – having existing classes and studying their names – for high-fidelity mocks. My goal was to make the site feel fun but clear, with space for many classes or just a few. Keeping the experience as a website rather than an app makes it more feasible for students to borrow or use a public device to submit information, in case they don't have access to their own. <a class="a-text" href="https://invis.io/VSO5KBJMYG5" target="_blank">Clickable prototype</a></p>
+    <figure class="flex-box spacebetween">
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group6" title="" href="../images/goog-teacher-hifi-00_2x.png">
+        <img src="../images/goog-teacher-hifi-00.png" srcset="../images/goog-teacher-hifi-00_1x.png 1x, ../images/goog-teacher-hifi-00_2x.png 2x" alt="" />
       </a>
-      <figcaption>The live version of the moon marketing page</figcaption>
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group6" title="" href="../images/goog-teacher-hifi-01_2x.png">
+        <img src="../images/goog-teacher-hifi-01.png" srcset="../images/goog-teacher-hifi-01_1x.png 1x, ../images/goog-teacher-hifi-01_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group6" title="" href="../images/goog-teacher-hifi-02_2x.png">
+        <img src="../images/goog-teacher-hifi-02.png" srcset="../images/goog-teacher-hifi-02_1x.png 1x, ../images/goog-teacher-hifi-02_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group6" title="" href="../images/goog-teacher-hifi-03_2x.png">
+        <img src="../images/goog-teacher-hifi-03.png" srcset="../images/goog-teacher-hifi-03_1x.png 1x, ../images/goog-teacher-hifi-03_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group6" title="" href="../images/goog-teacher-hifi-04a_2x.png">
+        <img src="../images/goog-teacher-hifi-04a.png" srcset="../images/goog-teacher-hifi-04a_1x.png 1x, ../images/goog-teacher-hifi-04a_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-4 projectImg border" rel="group6" title="" href="../images/goog-teacher-hifi-05c_2x.png">
+        <img src="../images/goog-teacher-hifi-05c.png" srcset="../images/goog-teacher-hifi-05c_1x.png 1x, ../images/goog-teacher-hifi-05c_2x.png 2x" alt="" />
+      </a>
+
+    </figure>
+
+    <h3 class="box">Mobile Web</h3>
+    <p>People expect to be able to access everything from their phones, and I wanted teachers to be able to study student names whenever they had a moment. The site scaled down easily to mobile web. <a class="a-text" href="https://invis.io/3ZO5K9L84R2" target="_blank">Clickable prototype</a></p>
+    <figure class="flex-box spacebetween flex-start">
+      <a class="fancybox fancybox.image col-2 projectImg border" rel="group7" title="" href="../images/goog-mobile-00_2x.png">
+        <img src="../images/goog-mobile-00.png" srcset="../images/goog-mobile-00_1x.png 1x, ../images/goog-mobile-00_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-2 projectImg border" rel="group7" title="" href="../images/goog-mobile-01_2x.png">
+        <img src="../images/goog-mobile-01.png" srcset="../images/goog-mobile-01_1x.png 1x, ../images/goog-mobile-01_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-2 projectImg border" rel="group7" title="" href="../images/goog-mobile-02_2x.png">
+        <img src="../images/goog-mobile-02.png" srcset="../images/goog-mobile-02_1x.png 1x, ../images/goog-mobile-02_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-2 projectImg border" rel="group7" title="" href="../images/goog-mobile-03_2x.png">
+        <img src="../images/goog-mobile-03.png" srcset="../images/goog-mobile-03_1x.png 1x, ../images/goog-mobile-03_2x.png 2x" alt="" />
+      </a>
+
+      <a class="fancybox fancybox.image col-2 projectImg border" rel="group7" title="" href="../images/goog-mobile-04_2x.png">
+        <img src="../images/goog-mobile-04.png" srcset="../images/goog-mobile-04_1x.png 1x, ../images/goog-mobile-04_2x.png 2x" alt="" />
+      </a>
+
     </figure>
 
     </section>

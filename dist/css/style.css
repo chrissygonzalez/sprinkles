@@ -352,6 +352,13 @@ GENERAL CLASSES
   padding: 10px;
 }
 
+.flex-start {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .readingCol {
   width: 66.6%;
   margin-left: 16.66%;

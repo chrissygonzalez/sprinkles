@@ -26,8 +26,7 @@ hr {
 
 button {
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 /*
 ****************
@@ -43,19 +42,13 @@ GRID
 .row {
   width: 100%;
   display: -webkit-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .row-center {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .col-1 {
@@ -301,20 +294,13 @@ HOMEPAGE BUTTONS
   color: #1a1a1a;
   border: 2px solid #1a1a1a;
   opacity: 1;
-  -webkit-animation: 1s fade-out 1;
-          animation: 1s fade-out 1;
+  animation: 1s fade-out 1;
   pointer-events: none;
 }
 
 .hide {
   display: none;
-  -webkit-animation: 1s fade-out 1;
-          animation: 1s fade-out 1;
-}
-
-@-webkit-keyframes fade-out {
-  0%   { opacity: .75; }
-  100% { opacity: 1; }
+  animation: 1s fade-out 1;
 }
 
 @keyframes fade-out {
@@ -334,33 +320,18 @@ GENERAL CLASSES
 
 .flex-box {
   display: -webkit-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   -webkit-align-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10px;
 }
 
 .flex-start {
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 .readingCol {
@@ -376,9 +347,7 @@ GENERAL CLASSES
 }
 
 .spacearound {
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  justify-content: space-around;
 }
 
 /*
@@ -390,9 +359,6 @@ HEADER & INTRO
 header {
   background-color: #50E3C2;
   padding-bottom: 20px;
-  padding-top: 120px;
-  background-image: url(../images/sprinkles.png);
-  background-repeat: repeat-x;
 }
 
 .biopic {
@@ -447,10 +413,7 @@ PROJECTS
 }
 
 .spacebetween {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .projectHeader {
@@ -550,6 +513,27 @@ footer {
 }
 
 /*
+*******************
+SPRINKLE ANIMATION
+*******************
+*/
+.sprinkle {
+  width: 20px;
+  display: inline-block;
+  position: relative;
+  -webkit-animation: 1s linear 0s fade_sprinkle;
+        animation: 1s linear 0s fade_sprinkle;
+}
+
+#sprinkles {
+  height: 125px;
+}
+
+@-webkit-keyframes fade_sprinkle { from { opacity: 0; } to { opacity: 1; }  }
+      @keyframes fade_sprinkle { from { opacity: 0; } to { opacity: 1; }  }
+
+
+/*
 *****************
 MEDIA QUERIES
 *****************
@@ -563,7 +547,7 @@ MEDIA QUERIES
 @media only screen and (max-width: 850px) {
 
   header {
-    padding-top: 60px;
+    /* padding-top: 60px; */
   }
 
   #name {
@@ -583,11 +567,7 @@ MEDIA QUERIES
   }
 
   .summary {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 
   .bio {

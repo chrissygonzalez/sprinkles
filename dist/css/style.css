@@ -359,6 +359,7 @@ HEADER & INTRO
 header {
   background-color: #50E3C2;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .biopic {
